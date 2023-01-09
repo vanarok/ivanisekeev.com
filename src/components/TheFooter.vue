@@ -7,7 +7,18 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <nav backdrop-blur text-xl fixed bottom-0 left-0 w-full flex py-1 md:py-4>
+  <nav
+    backdrop-blur
+    text-xl
+    fixed
+    bottom-0
+    left-0
+    w-full
+    flex
+    py-1
+    md:py-4
+    z-100
+  >
     <div m-auto flex>
       <button
         class="icon-btn mx-2 !outline-none"
