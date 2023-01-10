@@ -52,10 +52,10 @@ const { t } = useI18n()
         :key="slide.id"
         class="cursor-grab"
       >
-        <v-img class="rounded-lg h-45" :src="slide.picture">
+        <v-img :aspect-ratio="1.775" class="rounded-lg" :src="slide.picture">
           <template #placeholder>
-            <div class="d-flex align-center justify-center fill-height">
-              <v-progress-circular indeterminate color="grey-lighten-4" />
+            <div class="flex justify-center items-center h-full">
+              <v-progress-circular indeterminate />
             </div>
           </template>
         </v-img>
@@ -104,7 +104,7 @@ const { t } = useI18n()
             :slides-per-view="1"
             :space-between="50"
             :preload-images="false"
-            class="md:w-180 mb-6"
+            class="mb-6"
           >
             <SwiperSlide
               v-for="slide in pictures"
@@ -114,7 +114,17 @@ const { t } = useI18n()
               <p text-sm absolute top-0 italic my-2>
                 {{ slide.description }}
               </p>
-              <v-img class="rounded-lg w-180" :src="slide.picture" />
+              <v-img
+                :aspect-ratio="1.775"
+                :src="slide.picture"
+                class="rounded-lg"
+              >
+                <template #placeholder>
+                  <div class="flex justify-center items-center h-full">
+                    <v-progress-circular indeterminate />
+                  </div>
+                </template>
+              </v-img>
             </SwiperSlide>
           </Swiper>
           <div mb-2 md:mb-6>
