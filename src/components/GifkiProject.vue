@@ -10,6 +10,11 @@ const gifki = ref([
     description: 'Main page (logged)',
     picture: '/gifki/gifki-main-logged.png',
   },
+  {
+    id: 3,
+    description: 'Login page',
+    picture: '/gifki/gifki-login.png',
+  },
 ])
 
 const { t } = useI18n()

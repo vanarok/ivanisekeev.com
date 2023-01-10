@@ -33,7 +33,6 @@ const smallerMd = breakpoint.smaller('md')
     py-5
     px-2
     rounded-lg
-    md:h-54
     cursor-pointer
     @click="showAboutProject = true"
   >
