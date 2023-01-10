@@ -14,4 +14,14 @@ profile:
   motto: All roads lead to Rome, but my path leads to Japan
   bio: As a {specialization} developer, I bring my passion for web development and my diverse skillset to every project I work on. With proficiency in popular {js} frameworks like {vuejs} and {nodejs}, as well as experience with Docker and Vuetify, I am equipped to handle a wide range of projects. My strong skills in HTML and CSS, as well as my ability to write clean, efficient code, make me a valuable asset to any team.
   bio2: In my free time, I enjoy watching anime and taking care of my orange cat named Muska. I also love playing strategy games. As a hobby, I also love traveling and exploring new places.
+projects:
+  title: Projects
+  description: A list of my strongest projects
+  gifki:
+    title: A platform for publishing gifs, clips, stickers
+    description1: As a frontend developer working on the platform, I faced several challenges that required me to think creatively and use my problem-solving skills. One of the main challenges I faced was ensuring that the platform was optimized for a variety of devices and screen sizes. This required me to be proficient in responsive design techniques and have a strong understanding of how to use CSS media queries and grid layouts effectively.
+    description2: To solve this problem, I spent a lot of time researching best practices for responsive design and experimenting with different layout approaches. I also worked closely with the design team to ensure that the final product was visually appealing and easy to use on all devices.
+    description3: Another challenge I faced was implementing real-time features such as live gif, clip, and sticker searches. This required me to have a solid understanding of JavaScript and be able to work with APIs and websockets.
+    description4: To solve this problem, I spent time learning about the different tools and techniques available for implementing real-time features and experimented with different approaches. I also worked closely with the backend team to ensure that the data being delivered to the frontend was accurate and up-to-date
+    description5: Overall, working on the project helped me to improve my skills in responsive design, JavaScript, and working with APIs and websockets. It was a challenging but rewarding experience that allowed me to grow as a developer and create a product that is used and enjoyed by a large community of users.
 not-found: Not found
