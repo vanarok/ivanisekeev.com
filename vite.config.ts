@@ -17,7 +17,7 @@ import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
 import Shiki from 'markdown-it-shiki'
 import VueMacros from 'unplugin-vue-macros/vite'
-import { PrimeVueResolver } from 'unplugin-vue-components/resolvers'
+import { Vuetify3Resolver } from 'unplugin-vue-components/resolvers'
 
 export default defineConfig({
   server: {
@@ -75,7 +75,7 @@ export default defineConfig({
       // allow auto import and register components used in markdown
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       dts: 'src/components.d.ts',
-      resolvers: [PrimeVueResolver()],
+      resolvers: [Vuetify3Resolver()],
     }),
 
     // https://github.com/antfu/unocss
@@ -165,7 +165,6 @@ export default defineConfig({
   ssgOptions: {
     script: 'async',
     formatting: 'minify',
-    format: 'cjs',
     onFinished() {
       generateSitemap()
     },
@@ -173,6 +172,6 @@ export default defineConfig({
 
   ssr: {
     // TODO: workaround until they support native ESM
-    noExternal: ['workbox-window', /vue-i18n/],
+    noExternal: ['workbox-window', /vue-i18n/, 'vuetify'],
   },
 })

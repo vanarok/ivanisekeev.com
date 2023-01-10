@@ -2,6 +2,7 @@
 
 <template>
   <h1
+    icon-btn
     font-weight-1000
     text-lg
     md:text-3xl
@@ -17,8 +18,5 @@
 .logo {
   font-family: 'Indie Flower';
   transition: 0.4s;
-}
-.logo:hover {
-  color: hsla(160, 100%, 37%, 1);
 }
 </style>
