@@ -18,8 +18,6 @@ const showAboutProject = ref(false)
 
 const breakpoint = useBreakpoint()
 const smallerMd = breakpoint.smaller('md')
-
-const { t } = useI18n()
 </script>
 
 <template>
@@ -90,9 +88,19 @@ const { t } = useI18n()
       content-class="items-center"
       :fullscreen="smallerMd"
     >
-      <v-card class="align-center md:w-200">
+      <v-card class="align-center md:w-200 pa-1">
         <v-card-title class="!text-base !md:text-xl !font-bold mt-2">
-          {{ title }}
+          <div max-w-75vw truncate v-text="title" />
+
+          <div
+            cursor-pointer
+            absolute
+            top-4
+            right-4
+            i-carbon-close
+            text-3xl
+            @click="showAboutProject = false"
+          />
         </v-card-title>
         <v-card-text>
           <Swiper
@@ -104,7 +112,7 @@ const { t } = useI18n()
             :slides-per-view="1"
             :space-between="50"
             :preload-images="false"
-            class="mb-6"
+            class="mb-2"
           >
             <SwiperSlide
               v-for="slide in pictures"
@@ -127,7 +135,7 @@ const { t } = useI18n()
               </v-img>
             </SwiperSlide>
           </Swiper>
-          <div mb-2 md:mb-6>
+          <div mb-2 md:mb-2>
             <v-chip
               v-for="skill in skills"
               :key="skill"
@@ -150,11 +158,6 @@ const { t } = useI18n()
             v-text="paragraph"
           />
         </v-card-text>
-        <v-card-actions>
-          <v-btn color="primary" block @click="showAboutProject = false">
-            {{ t(`button.back`) }}
-          </v-btn>
-        </v-card-actions>
       </v-card>
     </v-dialog>
   </div>
