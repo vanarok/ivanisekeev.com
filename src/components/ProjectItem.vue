@@ -98,13 +98,16 @@ const { t } = useI18n()
             :space-between="50"
             :preload-images="false"
             lazy
-            class="md:w-180 mb-6 md:mb-0"
+            class="md:w-180 mb-6"
           >
             <SwiperSlide
               v-for="slide in pictures"
               :key="slide.id"
-              class="md:pa-10"
+              class="py-10 md:pa-10"
             >
+              <p text-sm absolute top-0 italic my-2>
+                {{ slide.description }}
+              </p>
               <img rounded-lg :src="slide.picture" />
             </SwiperSlide>
           </Swiper>
