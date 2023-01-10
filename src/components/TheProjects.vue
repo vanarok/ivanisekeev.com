@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import type { Project } from '~/types'
 const { t } = useI18n()
+
+const projects: Project[] = useProjects()
 </script>
 
 <template>
@@ -20,7 +23,20 @@ const { t } = useI18n()
     font-mono
     v-text="t('projects.description')"
   />
-  <GifkiProject />
+  <ProjectItem
+    v-for="project in projects"
+    :key="project.name"
+    :pictures="project.pictures"
+    :title="t(`projects.${project.name}.title`)"
+    :skills="project.skills"
+    :description="[
+      t(`projects.${project.name}.description1`),
+      t(`projects.${project.name}.description2`),
+      t(`projects.${project.name}.description3`),
+      t(`projects.${project.name}.description4`),
+      t(`projects.${project.name}.description5`),
+    ]"
+  />
 </template>
 
 <style></style>

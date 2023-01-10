@@ -21,6 +21,7 @@ declare module '@vue/runtime-core' {
     TheFooter: typeof import('./components/TheFooter.vue')['default']
     TheProfile: typeof import('./components/TheProfile.vue')['default']
     TheProjects: typeof import('./components/TheProjects.vue')['default']
+    VAvatar: typeof import('vuetify/components')['VAvatar']
     VBtn: typeof import('vuetify/components')['VBtn']
     VButton: typeof import('vuetify/components')['VButton']
     VCard: typeof import('vuetify/components')['VCard']
@@ -29,6 +30,7 @@ declare module '@vue/runtime-core' {
     VCardTitle: typeof import('vuetify/components')['VCardTitle']
     VChip: typeof import('vuetify/components')['VChip']
     VDialog: typeof import('vuetify/components')['VDialog']
+    VIcon: typeof import('vuetify/components')['VIcon']
     VImg: typeof import('vuetify/components')['VImg']
     VProgressCircular: typeof import('vuetify/components')['VProgressCircular']
   }

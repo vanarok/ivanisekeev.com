@@ -6,24 +6,25 @@ const { locale } = useI18n()
 </script>
 
 <template>
-  <div flex flex-col md:flex-row justify-between gap-3>
+  <div v-if="!upworkReferer" md:text-left pb-5>
     <a
-      v-if="upworkReferer"
+      icon-btn
+      href="mailto:ivanisekeev0@gmail.com?subject=ivansvoboda.com: Your subject&body=Greeting. My name is ..."
+    >
+      <div i-carbon-email align-text-bottom flex-inline mr-2 />
+      ivanisekeev0@gmail.com
+    </a>
+  </div>
+  <div flex justify-center md:justify-between gap-3>
+    <a
       icon-btn
       target="_blank"
       href="https://www.upwork.com/freelancers/~01d481153ecadb517e"
     >
       <div text-green i-simple-icons-upwork align-bottom flex-inline mr-1 />
-      upwork profile
+      upwork
     </a>
-    <template v-else>
-      <a
-        icon-btn
-        href="mailto:ivanisekeev0@gmail.com?subject=ivansvoboda.com: Your subject&body=Greeting. My name is ..."
-      >
-        <div i-carbon-email align-text-bottom flex-inline mr-2 />
-        ivanisekeev0@gmail.com
-      </a>
+    <template v-if="!upworkReferer">
       <a
         icon-btn
         target="_blank"
