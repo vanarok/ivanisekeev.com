@@ -22,11 +22,14 @@ declare module '@vue/runtime-core' {
     TheProfile: typeof import('./components/TheProfile.vue')['default']
     TheProjects: typeof import('./components/TheProjects.vue')['default']
     VBtn: typeof import('vuetify/components')['VBtn']
+    VButton: typeof import('vuetify/components')['VButton']
     VCard: typeof import('vuetify/components')['VCard']
     VCardActions: typeof import('vuetify/components')['VCardActions']
     VCardText: typeof import('vuetify/components')['VCardText']
     VCardTitle: typeof import('vuetify/components')['VCardTitle']
     VChip: typeof import('vuetify/components')['VChip']
     VDialog: typeof import('vuetify/components')['VDialog']
+    VImg: typeof import('vuetify/components')['VImg']
+    VProgressCircular: typeof import('vuetify/components')['VProgressCircular']
   }
 }

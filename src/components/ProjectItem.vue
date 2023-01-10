@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import { Lazy, Navigation, Pagination } from 'swiper'
+import { Navigation, Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import type { Picture } from '~/types'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import 'swiper/css/lazy'
 
 defineProps<{
   title: string
@@ -16,6 +15,11 @@ defineProps<{
 }>()
 
 const showAboutProject = ref(false)
+
+const breakpoint = useBreakpoint()
+const smallerMd = breakpoint.smaller('md')
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -30,7 +34,6 @@ const showAboutProject = ref(false)
     py-5
     px-2
     rounded-lg
-    md:h-54
     cursor-pointer
     @click="showAboutProject = true"
   >
@@ -39,15 +42,23 @@ const showAboutProject = ref(false)
       id="projectSlider"
       class="w-full md:min-w-80 md:w-80 md:h-100%"
       :pagination="{ clickable: true }"
-      :modules="[Navigation, Pagination, Lazy]"
+      :modules="[Navigation, Pagination]"
       navigation
       :slides-per-view="1"
       :space-between="50"
-      :preload-images="false"
-      lazy
     >
-      <SwiperSlide v-for="slide in pictures" :key="slide.id">
-        <img rounded-lg :src="slide.picture" />
+      <SwiperSlide
+        v-for="slide in pictures"
+        :key="slide.id"
+        class="cursor-grab"
+      >
+        <v-img class="rounded-lg h-45" :src="slide.picture">
+          <template #placeholder>
+            <div class="d-flex align-center justify-center fill-height">
+              <v-progress-circular indeterminate color="grey-lighten-4" />
+            </div>
+          </template>
+        </v-img>
       </SwiperSlide>
     </Swiper>
     <div>
@@ -77,9 +88,10 @@ const showAboutProject = ref(false)
       v-model="showAboutProject"
       scrollable
       content-class="items-center"
+      :fullscreen="smallerMd"
     >
       <v-card class="align-center md:w-200">
-        <v-card-title class="text-lg md:text-xl text-bold mt-2">
+        <v-card-title class="!text-base !md:text-xl !font-bold mt-2">
           {{ title }}
         </v-card-title>
         <v-card-text>
@@ -87,20 +99,22 @@ const showAboutProject = ref(false)
             v-if="pictures"
             id="projectSlider"
             :pagination="{ clickable: true }"
-            :modules="[Navigation, Pagination, Lazy]"
+            :modules="[Navigation, Pagination]"
             navigation
             :slides-per-view="1"
             :space-between="50"
             :preload-images="false"
-            lazy
-            class="w-180 mb-6 md:mb-0"
+            class="md:w-180 mb-6"
           >
             <SwiperSlide
               v-for="slide in pictures"
               :key="slide.id"
-              class="md:pa-10"
+              class="py-10 md:pa-10 cursor-grab"
             >
-              <img rounded-lg :src="slide.picture" />
+              <p text-sm absolute top-0 italic my-2>
+                {{ slide.description }}
+              </p>
+              <v-img class="rounded-lg w-180" :src="slide.picture" />
             </SwiperSlide>
           </Swiper>
           <div mb-2 md:mb-6>
@@ -128,7 +142,7 @@ const showAboutProject = ref(false)
         </v-card-text>
         <v-card-actions>
           <v-btn color="primary" block @click="showAboutProject = false">
-            Close Dialog
+            {{ t(`button.back`) }}
           </v-btn>
         </v-card-actions>
       </v-card>

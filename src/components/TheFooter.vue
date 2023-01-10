@@ -6,6 +6,9 @@ const toggleLocales = () => {
 }
 
 const toggleDark = useToggleDark()
+
+const route = useRoute()
+const upworkReferer = route.query.referer === 'upwork'
 </script>
 
 <template>
@@ -39,6 +42,7 @@ const toggleDark = useToggleDark()
       </a>
 
       <a
+        v-if="!upworkReferer"
         class="icon-btn mx-2"
         rel="noreferrer"
         href="https://github.com/vanarok"
