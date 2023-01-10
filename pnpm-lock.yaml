@@ -26,8 +26,6 @@ specifiers:
   nprogress: ^0.2.0
   pinia: ^2.0.28
   pnpm: ^7.18.1
-  primeicons: ^6.0.1
-  primevue: ^3
   sass: ^1.57.1
   shiki: ^0.11.1
   swiper: ^8.4.5
@@ -61,8 +59,6 @@ dependencies:
   '@vueuse/head': 1.0.22_vue@3.2.45
   nprogress: 0.2.0
   pinia: 2.0.28_prq2uz4lho2pwp6irk4cfkrxwu
-  primeicons: 6.0.1
-  primevue: 3.21.0_5f3kdig7wnjzidee4jtphf73cq
   swiper: 8.4.5
   vue: 3.2.45
   vue-demi: 0.13.11_vue@3.2.45
@@ -7479,20 +7475,6 @@ packages:
     resolution: {integrity: sha512-6UqkYefdogmzqAZWzJ7laYeJnaXDy2/J+ZqiiMtS7t7OfpXWTlaeGMwX8U6EFvPV/YWWEKRkS8hKS4k60WHTOg==}
     engines: {node: ^14.13.1 || >=16.0.0}
     dev: true
-
-  /primeicons/6.0.1:
-    resolution: {integrity: sha512-KDeO94CbWI4pKsPnYpA1FPjo79EsY9I+M8ywoPBSf9XMXoe/0crjbUK7jcQEDHuc0ZMRIZsxH3TYLv4TUtHmAA==}
-    dev: false
-
-  /primevue/3.21.0_5f3kdig7wnjzidee4jtphf73cq:
-    resolution: {integrity: sha512-VqXMvigzz24JRPgG+i20Vj1AMS0AKiNdT9iFkmcWnO4EilntLS2I1yR2OE1hd9bMFV97ePsdaScIygW+bedN2g==}
-    peerDependencies:
-      primeicons: ^5.0.0 || ^6.0.0
-      vue: ^3.0.0
-    dependencies:
-      primeicons: 6.0.1
-      vue: 3.2.45
-    dev: false
 
   /proc-log/2.0.1:
     resolution: {integrity: sha512-Kcmo2FhfDTXdcbfDH76N7uBYHINxc/8GW7UAVuVP9I+Va3uHSerrnKV6dLooga/gh7GlgzuCCr/eoldnL1muGw==}
