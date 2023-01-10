@@ -16,6 +16,9 @@ defineProps<{
 }>()
 
 const showAboutProject = ref(false)
+
+const breakpoint = useBreakpoint()
+const smallerMd = breakpoint.smaller('md')
 </script>
 
 <template>
@@ -77,9 +80,10 @@ const showAboutProject = ref(false)
       v-model="showAboutProject"
       scrollable
       content-class="items-center"
+      :fullscreen="smallerMd"
     >
       <v-card class="align-center md:w-200">
-        <v-card-title class="text-lg md:text-xl text-bold mt-2">
+        <v-card-title class="!text-base md:text-xl text-bold mt-2">
           {{ title }}
         </v-card-title>
         <v-card-text>
@@ -93,7 +97,7 @@ const showAboutProject = ref(false)
             :space-between="50"
             :preload-images="false"
             lazy
-            class="w-180 mb-6 md:mb-0"
+            class="md:w-180 mb-6 md:mb-0"
           >
             <SwiperSlide
               v-for="slide in pictures"
