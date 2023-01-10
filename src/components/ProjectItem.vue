@@ -19,6 +19,8 @@ const showAboutProject = ref(false)
 
 const breakpoint = useBreakpoint()
 const smallerMd = breakpoint.smaller('md')
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -131,7 +133,7 @@ const smallerMd = breakpoint.smaller('md')
         </v-card-text>
         <v-card-actions>
           <v-btn color="primary" block @click="showAboutProject = false">
-            Close Dialog
+            {{ t(`button.back`) }}
           </v-btn>
         </v-card-actions>
       </v-card>
