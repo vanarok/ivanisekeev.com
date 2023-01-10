@@ -4,6 +4,8 @@ const { t, locale } = useI18n()
 const toggleLocales = () => {
   locale.value = locale.value === 'ru' ? 'en' : 'ru'
 }
+
+const toggleDark = useToggleDark()
 </script>
 
 <template>
