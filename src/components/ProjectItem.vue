@@ -33,6 +33,7 @@ const smallerMd = breakpoint.smaller('md')
     px-2
     rounded-lg
     cursor-pointer
+    mb-6
     @click="showAboutProject = true"
   >
     <Swiper
