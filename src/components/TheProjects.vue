@@ -29,13 +29,7 @@ const projects: Project[] = useProjects()
     :pictures="project.pictures"
     :title="t(`projects.${project.name}.title`)"
     :skills="project.skills"
-    :description="[
-      t(`projects.${project.name}.description1`),
-      t(`projects.${project.name}.description2`),
-      t(`projects.${project.name}.description3`),
-      t(`projects.${project.name}.description4`),
-      t(`projects.${project.name}.description5`),
-    ]"
+    :description="project.description"
   />
 </template>
 
