@@ -52,7 +52,7 @@ const { t } = useI18n()
         :key="slide.id"
         class="cursor-grab"
       >
-        <v-img :aspect-ratio="1.775" class="rounded-lg" :src="slide.picture">
+        <v-img :aspect-ratio="16 / 9" class="rounded-lg" :src="slide.picture">
           <template #placeholder>
             <div class="flex justify-center items-center h-full">
               <v-progress-circular indeterminate />
@@ -115,7 +115,7 @@ const { t } = useI18n()
                 {{ slide.description }}
               </p>
               <v-img
-                :aspect-ratio="1.775"
+                :aspect-ratio="16 / 9"
                 :src="slide.picture"
                 class="rounded-lg"
               >
