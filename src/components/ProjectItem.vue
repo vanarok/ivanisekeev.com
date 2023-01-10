@@ -59,7 +59,7 @@ const smallerMd = breakpoint.smaller('md')
         </v-img>
       </SwiperSlide>
     </Swiper>
-    <div>
+    <div md:w-80>
       <h4
         font-bold
         style="white-space: normal"
