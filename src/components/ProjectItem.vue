@@ -82,7 +82,7 @@ const smallerMd = breakpoint.smaller('md')
       :fullscreen="smallerMd"
     >
       <v-card class="align-center md:w-200">
-        <v-card-title class="!text-base md:text-xl text-bold mt-2">
+        <v-card-title class="!text-base !md:text-xl !font-bold mt-2">
           {{ title }}
         </v-card-title>
         <v-card-text>

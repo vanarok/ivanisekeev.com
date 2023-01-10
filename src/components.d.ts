@@ -22,6 +22,7 @@ declare module '@vue/runtime-core' {
     TheProfile: typeof import('./components/TheProfile.vue')['default']
     TheProjects: typeof import('./components/TheProjects.vue')['default']
     VBtn: typeof import('vuetify/components')['VBtn']
+    VButton: typeof import('vuetify/components')['VButton']
     VCard: typeof import('vuetify/components')['VCard']
     VCardActions: typeof import('vuetify/components')['VCardActions']
     VCardText: typeof import('vuetify/components')['VCardText']
