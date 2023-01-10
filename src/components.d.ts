@@ -21,6 +21,7 @@ declare module '@vue/runtime-core' {
     TheFooter: typeof import('./components/TheFooter.vue')['default']
     TheProfile: typeof import('./components/TheProfile.vue')['default']
     TheProjects: typeof import('./components/TheProjects.vue')['default']
+    VAvatar: typeof import('vuetify/components')['VAvatar']
     VBtn: typeof import('vuetify/components')['VBtn']
     VButton: typeof import('vuetify/components')['VButton']
     VCard: typeof import('vuetify/components')['VCard']
