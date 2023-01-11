@@ -105,11 +105,11 @@ export function useProjects() {
       },
     ],
     description: [
-      t(`projects.gifki.description1`),
-      t(`projects.gifki.description2`),
-      t(`projects.gifki.description3`),
-      t(`projects.gifki.description4`),
-      t(`projects.gifki.description5`),
+      t('projects.gifki.description1'),
+      t('projects.gifki.description2'),
+      t('projects.gifki.description3'),
+      t('projects.gifki.description4'),
+      t('projects.gifki.description5'),
     ],
   }
 
@@ -146,7 +146,7 @@ export function useProjects() {
         picture: '/xwave/xwave-personal.png',
       },
     ],
-    description: [t(`projects.xwave.description1`)],
+    description: [t('projects.xwave.description1')],
   }
 
   return [gifki, xwave]
