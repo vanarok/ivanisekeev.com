@@ -6,17 +6,15 @@ export function useProjects() {
       name: 'gifki',
       skills: [
         'JavaScript',
-        'HTML',
+        'SCSS',
+        'PostCSS',
+        'UnoCSS',
         'Vue.JS',
         'Vuetify',
-        'POSTCSS',
-        'SCSS',
         'RESTful API',
-        'Tailwind',
-        'Unocss',
-        'Git',
         'NGINX',
         'Linux',
+        'Git',
       ],
       pictures: [
         {
@@ -120,7 +118,6 @@ export function useProjects() {
       name: 'xwave',
       skills: [
         'TypeScript',
-        'HTML',
         'SCSS',
         'Vue.JS',
         'PrimeFaces',
@@ -152,8 +149,59 @@ export function useProjects() {
       description: [t('projects.xwave.description1')],
     }
   })
-  const projects = computed(() => {
-    return [gifki.value, xwave.value]
+
+  const ivansvoboda = computed(() => {
+    return {
+      name: 'ivansvoboda',
+      skills: [
+        'TypeScript',
+        'PostCSS',
+        'UnoCSS',
+        'Vue.JS',
+        'Vue-SSG',
+        'Vue-I18n',
+        'Vuetify',
+        'Cypress',
+        'Vitest',
+        'Pinia',
+        'Swiper',
+        'PWA',
+        'PNPM',
+        'Git',
+      ],
+      pictures: [
+        {
+          id: 1,
+          description: 'Profile',
+          picture: '/ivansvoboda/ivansvoboda-profile.png',
+        },
+        {
+          id: 2,
+          description: 'Projects',
+          picture: '/ivansvoboda/ivansvoboda-projects.png',
+        },
+        {
+          id: 3,
+          description: 'Project popup',
+          picture: '/ivansvoboda/ivansvoboda-popup.png',
+        },
+        {
+          id: 4,
+          description: 'Dark theme',
+          picture: '/ivansvoboda/ivansvoboda-dark.png',
+        },
+      ],
+      description: [
+        t('projects.ivansvoboda.description1'),
+        t('projects.ivansvoboda.description2'),
+        t('projects.ivansvoboda.description3'),
+      ],
+    }
   })
+
+  const projects = computed(() => {
+    return [gifki.value, xwave.value, ivansvoboda.value]
+  })
+
   return projects
 }

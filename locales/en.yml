@@ -27,4 +27,9 @@ projects:
   xwave:
     title: Boat booking application
     description1: The goal of this web application development project was to create a user-friendly platform for automating service appointments for my client's business using Vue.js, Koa, and PrimeFaces UI. The platform allows clients to easily make appointments online, streamlining the scheduling process for both clients and the business. The application was implemented with various features and functionality using Vue.js, Koa, and PrimeFaces UI, and integrated with the Yclients API to access schedule records and facilitate the booking process. My role required strong skills in web development and a solid understanding of designing and building web applications that provide value to users. Through my contributions, the end result was a web application that effectively solves the problem of automating service appointments and showcases my abilities as a web developer.
+  ivansvoboda:
+    title: Ivan Svoboda's personal website is built with Vue.js
+    description1: Ivansvoboda.com is a personal website and brand, web developer. The goal of the project is to create a professional website, which will act as a portfolio for Ivan and promote his web development services.
+    description2: I was responsible for the design and functionality of the site, as well as integration with social networks SEO optimization.
+    description3: The website has become an important tool to promote the brand and increase the number of orders.
 not-found: Not found
