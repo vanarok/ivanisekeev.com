@@ -12,4 +12,5 @@ export interface Project {
   name: string
   skills: string[]
   pictures: Picture[]
+  description: string[]
 }

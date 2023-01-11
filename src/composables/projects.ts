@@ -1,4 +1,6 @@
 export function useProjects() {
+  const { t } = useI18n()
+
   const gifki = {
     name: 'gifki',
     skills: [
@@ -6,7 +8,7 @@ export function useProjects() {
       'HTML',
       'Vue.JS',
       'Vuetify',
-      'CSS',
+      'POSTCSS',
       'SCSS',
       'RESTful API',
       'Tailwind',
@@ -14,7 +16,6 @@ export function useProjects() {
       'Git',
       'NGINX',
       'Linux',
-      'TypeScript',
     ],
     pictures: [
       {
@@ -103,7 +104,50 @@ export function useProjects() {
         picture: '/gifki/gifki-mycollections-edit.png',
       },
     ],
+    description: [
+      t('projects.gifki.description1'),
+      t('projects.gifki.description2'),
+      t('projects.gifki.description3'),
+      t('projects.gifki.description4'),
+      t('projects.gifki.description5'),
+    ],
   }
 
-  return [gifki]
+  const xwave = {
+    name: 'xwave',
+    skills: [
+      'TypeScript',
+      'HTML',
+      'SCSS',
+      'Vue.JS',
+      'PrimeFaces',
+      'Node.js',
+      'Docker',
+      'Docker-compose',
+      'RESTful API',
+      'Git',
+      'NGINX',
+      'Linux',
+    ],
+    pictures: [
+      {
+        id: 1,
+        description: 'Service',
+        picture: '/xwave/xwave-service.png',
+      },
+      {
+        id: 2,
+        description: 'Date',
+        picture: '/xwave/xwave-date.png',
+      },
+      {
+        id: 3,
+        description: 'Personal',
+        picture: '/xwave/xwave-personal.png',
+      },
+    ],
+    description: [t('projects.xwave.description1')],
+  }
+
+  return [gifki, xwave]
 }
