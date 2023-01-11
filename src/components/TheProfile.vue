@@ -2,8 +2,8 @@
 
 <template>
   <div flex flex-col items-center md="flex-row gap-10">
-    <PhotoPortrait />
-    <ProfileIntro />
+    <PhotoPortrait class="w-30 h-30 md:w-50 md:h-50 md:h-full" />
+    <ProfileIntro class="h-full" />
   </div>
   <i18n-t
     keypath="profile.bio"
