@@ -2,7 +2,7 @@
 import type { Project } from '~/types'
 const { t } = useI18n()
 
-const projects: Project[] = useProjects()
+const projects = useProjects() as unknown as Project[]
 </script>
 
 <template>
