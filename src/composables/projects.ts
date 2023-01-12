@@ -6,10 +6,10 @@ export function useProjects() {
       name: 'gifki',
       skills: [
         'JavaScript',
+        'Vue.JS',
         'SCSS',
         'PostCSS',
         'UnoCSS',
-        'Vue.JS',
         'Vuetify',
         'RESTful API',
         'NGINX',
@@ -113,15 +113,79 @@ export function useProjects() {
     }
   })
 
+  const screenpixel = computed(() => {
+    return {
+      name: 'screenpixel',
+      skills: [
+        'JavaScript',
+        'Vue.JS',
+        'Laravel',
+        'Figma',
+        'Bootstrap',
+        'SCSS',
+        'PostCSS',
+        'Git',
+      ],
+
+      pictures: [
+        {
+          id: 1,
+          description: 'Login',
+          picture: '/screenpixel/screenpixel-login.png',
+        },
+        {
+          id: 2,
+          description: 'Sign up',
+          picture: '/screenpixel/screenpixel-signup.png',
+        },
+        {
+          id: 3,
+          description: 'Reset password',
+          picture: '/screenpixel/screenpixel-restore-account.png',
+        },
+        {
+          id: 4,
+          description: 'Account',
+          picture: '/screenpixel/screenpixel-account.png',
+        },
+        {
+          id: 5,
+          description: 'Billing',
+          picture: '/screenpixel/screenpixel-billing.png',
+        },
+        {
+          id: 6,
+          description: 'Invoices',
+          picture: '/screenpixel/screenpixel-invoices.png',
+        },
+        {
+          id: 7,
+          description: 'Plans',
+          picture: '/screenpixel/screenpixel-plans.png',
+        },
+        {
+          id: 7,
+          description: 'Notification',
+          picture: '/screenpixel/screenpixel-notification.png',
+        },
+      ],
+      description: [
+        t('projects.screenpixel.description1'),
+        t('projects.screenpixel.description2'),
+        t('projects.screenpixel.description3'),
+      ],
+    }
+  })
+
   const xwave = computed(() => {
     return {
       name: 'xwave',
       skills: [
         'TypeScript',
-        'SCSS',
         'Vue.JS',
-        'PrimeFaces',
         'Node.js',
+        'SCSS',
+        'PrimeFaces',
         'Docker',
         'Docker-compose',
         'RESTful API',
@@ -147,6 +211,31 @@ export function useProjects() {
         },
       ],
       description: [t('projects.xwave.description1')],
+    }
+  })
+
+  const crmSf = computed(() => {
+    return {
+      name: 'crm-sf',
+      skills: ['TypeScript', 'Vue.JS', 'Vuetify', 'vue-I18n', 'Git'],
+      pictures: [
+        {
+          id: 1,
+          description: 'List clients',
+          picture: '/crm-sf/crm-sf-clients.png',
+        },
+        {
+          id: 2,
+          description: 'Client edit',
+          picture: '/crm-sf/crm-sf-clients-edit.png',
+        },
+        {
+          id: 3,
+          description: 'Client info',
+          picture: '/crm-sf/crm-sf-clients-info.png',
+        },
+      ],
+      description: [t('projects.crm-sf.description1')],
     }
   })
 
@@ -200,7 +289,13 @@ export function useProjects() {
   })
 
   const projects = computed(() => {
-    return [gifki.value, xwave.value, ivansvoboda.value]
+    return [
+      gifki.value,
+      screenpixel.value,
+      xwave.value,
+      crmSf.value,
+      ivansvoboda.value,
+    ]
   })
 
   return projects

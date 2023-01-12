@@ -36,30 +36,13 @@ const smallerMd = breakpoint.smaller('md')
     mb-6
     @click="showAboutProject = true"
   >
-    <Swiper
-      v-if="pictures"
-      id="projectSlider"
-      class="w-full md:min-w-80 md:w-80 md:h-100%"
-      :pagination="{ clickable: true }"
-      :modules="[Navigation, Pagination]"
-      navigation
-      :slides-per-view="1"
-      :space-between="50"
-    >
-      <SwiperSlide
-        v-for="slide in pictures"
-        :key="slide.id"
-        class="cursor-grab"
-      >
-        <v-img :aspect-ratio="16 / 9" class="rounded-lg" :src="slide.picture">
-          <template #placeholder>
-            <div class="flex justify-center items-center h-full">
-              <v-progress-circular indeterminate />
-            </div>
-          </template>
-        </v-img>
-      </SwiperSlide>
-    </Swiper>
+    <v-img :aspect-ratio="16 / 9" class="rounded-lg" :src="pictures[0].picture">
+      <template #placeholder>
+        <div class="flex justify-center items-center h-full">
+          <v-progress-circular indeterminate />
+        </div>
+      </template>
+    </v-img>
     <div md:w-80>
       <h4
         font-bold

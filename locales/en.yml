@@ -32,4 +32,12 @@ projects:
     description1: Ivansvoboda.com is a personal website and brand, web developer. The goal of the project is to create a professional website, which will act as a portfolio for Ivan and promote his web development services.
     description2: I was responsible for the design and functionality of the site, as well as integration with social networks SEO optimization.
     description3: The website has become an important tool to promote the brand and increase the number of orders.
+  crm-sf:
+    title: Customer relationship management
+    description1: My project was the implementation of a typical Customer Relationship Management (CRM) system. My tasks included the implementation of multiple new pages for it to improve functionality and ease of use. I faced a problem that the code was well-documented, but it was difficult for me to understand how the class models worked. However, I had a lucky coincidence - I had a mentor for the project who transferred a lot of experience and I was able to master all the complexities and successfully complete the project.
+  screenpixel:
+    title: Personal user account
+    description1: My work consisted of redesigning a design layout into a component system using vue.js. My task was to create components that could be used multiple times in the application, in order to reduce the amount of code and simplify the application support.
+    description2: One of the problems I encountered during development was that the styles within the components did not use isolation and spread throughout the entire application. This led to changes in font, for example, in some places during page transitions. I had to make a number of modifications to the code to isolate the component styles and avoid such problems.
+    description3: In addition to isolating styles, I also added transition animations for modals and transitions between pages. This made the interface more smooth and user-friendly, as well as adding an additional design element and increasing the overall quality of the application. As a result, the project became more attractive and user-friendly for end-users.
 not-found: Not found
