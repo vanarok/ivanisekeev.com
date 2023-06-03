@@ -6,7 +6,7 @@
   "packageManager": "pnpm@8.6.0",
   "scripts": {
     "dev": "eleventy --serve --output .dev",
-    "build": "ENVIRONMENT=production eleventy"
+    "build": "PRODUCTION=true eleventy"
   },
   "keywords": [],
   "author": "",
