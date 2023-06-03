@@ -9,6 +9,7 @@ pages:
       - node_modules/
   script:
     - npm install
+    - npm build
   artifacts:
     paths:
       - public
