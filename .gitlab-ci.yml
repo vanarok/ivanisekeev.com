@@ -3,6 +3,11 @@ stages:
 
 image: node:20
 
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
 before_script:
     - corepack enable
     - corepack prepare pnpm@latest-8 --activate
