@@ -14,6 +14,7 @@
   "dependencies": {
     "@unocss/runtime": "^0.52.7",
     "alpinejs": "^3.12.2",
+    "eleventy-plugin-clean": "^1.2.5",
     "htmx.org": "^1.9.2",
     "nunjucks": "^3.2.4"
   },

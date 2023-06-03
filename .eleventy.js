@@ -1,4 +1,8 @@
-module.exports = (eleventyConfig) => {
+const clean = require("eleventy-plugin-clean");
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(clean);
+
   eleventyConfig.addPassthroughCopy({
     "./node_modules/alpinejs/dist/cdn.js": "./js/alpine.js",
     "./node_modules/htmx.org/dist/htmx.js": "./js/htmx.js",
