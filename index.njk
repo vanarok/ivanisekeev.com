@@ -1,0 +1,13 @@
+---
+layout: default.njk
+subtitle: Main page
+---
+
+<h2>{{ subtitle }}</h2>
+
+<div class="fixed inset-0 flex justify-center items-center">
+  <div x-data="{ count: 0 }">
+    <button x-on:click="count++">Increment</button>
+    <span x-text="count"></span>
+  </div>
+</div>
