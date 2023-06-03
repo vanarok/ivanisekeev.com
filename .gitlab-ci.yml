@@ -2,14 +2,23 @@ stages:
   - deploy
 
 image: node:20
+
+before_script:
+    - corepack enable
+    - corepack prepare pnpm@latest-8 --activate
+    - pnpm config set store-dir .pnpm-store
+
 pages:
   stage: deploy
-  cache:
-    paths:
-      - node_modules/
   script:
-    - npm install
-    - npm build
+    - pnpm install
+    - pnpm build
   artifacts:
     paths:
       - public
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+    paths:
+      - .pnpm-store
