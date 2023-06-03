@@ -1,0 +1,14 @@
+stages:
+  - deploy
+
+image: node:20
+pages:
+  stage: deploy
+  cache:
+    paths:
+      - node_modules/
+  script:
+    - npm install
+  artifacts:
+    paths:
+      - public
