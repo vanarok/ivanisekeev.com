@@ -4,4 +4,11 @@ module.exports = (eleventyConfig) => {
     "./node_modules/htmx.org/dist/htmx.js": "./js/htmx.js",
     "./node_modules/@unocss/runtime/mini.global.js": "./js/unocss.js",
   });
+
+  return {
+    dir: {
+      input: "src",
+      output: "public",
+    },
+  };
 };
