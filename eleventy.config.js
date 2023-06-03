@@ -8,12 +8,14 @@ module.exports = function (eleventyConfig) {
       ? {
           "./node_modules/alpinejs/dist/cdn.min.js": "./js/alpine.js",
           "./node_modules/htmx.org/dist/htmx.min.js": "./js/htmx.js",
-          "./node_modules/@picocss/pico/css/pico.min.css": "./css/pico.css",
+          "./src/shared/assets/vanilla.css": "./css/vanilla.css",
+          "./src/shared/assets/favicon.png": "./favicon.png",
         }
       : {
           "./node_modules/alpinejs/dist/cdn.js": "./js/alpine.js",
           "./node_modules/htmx.org/dist/htmx.js": "./js/htmx.js",
-          "./node_modules/@picocss/pico/css/pico.css": "./css/pico.css",
+          "./src/shared/assets/vanilla.css": "./css/vanilla.css",
+          "./src/shared/assets/favicon.png": "./favicon.png",
         }
   );
 
