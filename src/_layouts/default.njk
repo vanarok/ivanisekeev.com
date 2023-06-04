@@ -1,5 +1,5 @@
 ---
-title: Alpine.js-HTMX
+title: Ivan Svoboda, web developer
 ---
 
 <!DOCTYPE html>
@@ -8,13 +8,14 @@ title: Alpine.js-HTMX
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="css/vanilla.css" />
+    <style>
+      {% include "../assets/vanilla.css" %}
+    </style>
     <script src="js/alpine.js" defer></script>
-    <script src="js/htmx.js"></script>
+    <script src="js/htmx.js" defer></script>
     <link rel="icon" href="favicon.png" type="image/png" />
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    {{ content | safe }}
+    {% include "header.njk" %} {{ content | safe }}
   </body>
 </html>
