@@ -1,9 +1,12 @@
 const clean = require("eleventy-plugin-clean");
+const pluginWebc = require("@11ty/eleventy-plugin-webc");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("public");
 
   eleventyConfig.addPlugin(clean);
+
+  eleventyConfig.addPlugin(pluginWebc);
 
   eleventyConfig.addPassthroughCopy(
     process.env.PRODUCTION
