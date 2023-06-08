@@ -1,10 +1,9 @@
 ---
-layout: default.njk
-subtitle: Main page
+layout: Base.webc
 permalink: index.html
 ---
 
-<h2>{{ subtitle }}</h2>
+<h2>Главная</h2>
 
 <div class="fixed inset-0 flex justify-center items-center">
   <div x-data="{ count: 0 }">
