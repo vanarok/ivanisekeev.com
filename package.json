@@ -5,13 +5,14 @@
   "main": "index.js",
   "packageManager": "pnpm@8.6.0",
   "scripts": {
-    "dev": "eleventy --serve --output .dev",
+    "dev": "eleventy --serve --output ._site",
     "build": "PRODUCTION=true eleventy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@11ty/eleventy-plugin-bundle": "^1.0.4",
     "@picocss/pico": "^1.5.10",
     "@unocss/runtime": "^0.52.7",
     "alpinejs": "^3.12.2",

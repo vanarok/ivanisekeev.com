@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@11ty/eleventy-plugin-bundle':
+    specifier: ^1.0.4
+    version: 1.0.4
   '@picocss/pico':
     specifier: ^1.5.10
     version: 1.5.10
@@ -69,6 +72,15 @@ packages:
       - bufferutil
       - supports-color
       - utf-8-validate
+
+  /@11ty/eleventy-plugin-bundle@1.0.4:
+    resolution: {integrity: sha512-3qk7I95/hiTdvLEzitHfiK00heF2qtDq3T+N89SbbcNing31fq6A0suK/f6AOK5xdp/VpxfjWg3bqky+0XD+1Q==}
+    engines: {node: '>=14'}
+    dependencies:
+      debug: 4.3.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
 
   /@11ty/eleventy-utils@1.0.1:
     resolution: {integrity: sha512-HPpCTz4PzudcQU+i+x6GSNHVqgnvRhnVYg5dLKaAoRWLN966odAGsBxKSyhF8i1MdlOPtsytYb2AGWP7jISC5w==}
