@@ -17,4 +17,6 @@
         <main @raw="content"></main>
         <footer>© 2023 Ivan Svoboda</footer>
     </body>
+    <style @raw="getBundle('css', 'defer')" webc:keep></style>
+    <script @raw="getBundle('js', 'defer')" webc:keep></script>
 </html>
