@@ -10,7 +10,7 @@
         <script @raw="getBundle('js')" webc:keep></script>
         <script src="js/alpine.js" defer webc:keep></script>
         <script src="js/htmx.js" defer webc:keep></script>
-        <link rel="icon" href="favicon.png" type="image/png" />
+        <link rel="icon" href="public/favicon.png" type="image/png" />
     </head>
     <body>
         <site-header webc:import="./components/site-header.webc"></site-header>
