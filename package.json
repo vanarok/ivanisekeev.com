@@ -5,7 +5,7 @@
     "main": "index.js",
     "packageManager": "pnpm@8.6.0",
     "scripts": {
-        "dev": "eleventy --serve --output ._site",
+        "dev": "eleventy --serve --output dist",
         "build": "PRODUCTION=true eleventy"
     },
     "keywords": [],

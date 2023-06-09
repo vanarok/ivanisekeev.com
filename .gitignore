@@ -1,4 +1,4 @@
 node_modules
 .gitlab-ci-local
-._site
+dist
 .plugin-clean
