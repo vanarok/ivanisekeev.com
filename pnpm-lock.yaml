@@ -20,6 +20,9 @@ dependencies:
   htmx.org:
     specifier: ^1.9.2
     version: 1.9.2
+  prettier-config-vanarok:
+    specifier: ^1.0.2
+    version: 1.0.2(prettier@2.8.8)
 
 devDependencies:
   '@11ty/eleventy':
@@ -1295,6 +1298,20 @@ packages:
     dependencies:
       posthtml-parser: 0.11.0
       posthtml-render: 3.0.0
+
+  /prettier-config-vanarok@1.0.2(prettier@2.8.8):
+    resolution: {integrity: sha512-zYmcBqF4wJRPsMhZZfLPEf/nF0swAcmWf3BoQdU/LhOYBXR3TJjLwyBRwPIwcXDi3cXO+AtC4AVbD0xAYExxBg==}
+    peerDependencies:
+      prettier: ^2.8.4
+    dependencies:
+      prettier: 2.8.8
+    dev: false
+
+  /prettier@2.8.8:
+    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: false
 
   /promise-each@2.2.0:
     resolution: {integrity: sha512-67roqt1k3QDA41DZ8xi0V+rF3GoaMiX7QilbXu0vXimut+9RcKBNZ/t60xCRgcsihmNUsEjh48xLfNqOrKblUg==}

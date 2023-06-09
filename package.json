@@ -16,7 +16,8 @@
     "@11ty/eleventy-plugin-webc": "^0.11.1",
     "alpinejs": "^3.12.2",
     "eleventy-plugin-clean": "^1.2.5",
-    "htmx.org": "^1.9.2"
+    "htmx.org": "^1.9.2",
+    "prettier-config-vanarok": "^1.0.2"
   },
   "devDependencies": {
     "@11ty/eleventy": "2.0.2-alpha.2",
