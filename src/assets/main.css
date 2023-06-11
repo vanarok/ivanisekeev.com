@@ -1,6 +1,6 @@
 @font-face {
     font-family: urbanist-variable;
-    src: url('/public/Urbanist-VariableFont_wght.ttf') format('truetype-variations');
+    src: url('/public/Urbanist[ital,wght].ttf') format('truetype-variations');
     font-weight: 125 950;
     font-stretch: 75% 125%;
 }
@@ -9,17 +9,18 @@
     font-family: urbanist;
     src: url('/public/static/Urbanist-Regular.ttf') format('truetype'),
         url('/public/static/Urbanist-Bold.ttf') format('truetype'),
-        url('/public/static/Urbanist-Medium.ttf') format('truetype');
+        url('/public/static/Urbanist-Medium.ttf') format('truetype'),
+        url('/public/static/Urbanist-Black.ttf') format('truetype');
 }
 
 html,
 body {
-    font-family: urbanist;
+    font-family: urbanist, sans-serif;
 }
 
 @supports (font-variation-settings: 'wdth' 115) {
     html,
     body {
-        font-family: urbanist-variable;
+        font-family: urbanist-variable, sans-serif;
     }
 }
