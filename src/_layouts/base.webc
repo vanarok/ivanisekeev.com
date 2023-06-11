@@ -14,7 +14,7 @@
         <link rel="icon" href="public/favicon.png" type="image/png" />
     </head>
     <body>
-        <site-header webc:import="./components/site-header.webc"></site-header>
+        <header webc:import="./components/site-header.webc"></header>
         <main @raw="content"></main>
         <footer>© 2023 Ivan Svoboda</footer>
 

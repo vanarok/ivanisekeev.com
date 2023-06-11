@@ -1,1 +1,10 @@
-<header>Ivan Svoboda</header>
+<header webc:root>Ivan Svoboda sai</header>
+
+<style webc:scoped="site-header">
+    :host {
+        font-size: x-large;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+</style>
