@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ivan Svoboda - Experienced Freelance Web Developer | Custom Web Development Services</title>
+        <style @raw="getBundle('css')" webc:keep></style>
+        <link rel="stylesheet" href="public/main.css" webc:keep />
+        <link rel="icon" href="public/favicon.png" type="image/png" webc:keep />
+        <script type="module" @raw="getBundle('js')" webc:keep></script>
+    </head>
+    <body>
+        <header webc:import="site-header.webc"></header>
+        <main @raw="content" webc:nokeep></main>
+
+        <footer>
+            <p>© 2023 Ivan Svoboda</p>
+            <p>All Rights Reserved</p>
+            <p>Contact Information: <a href="mailto:ivanisekeev0@gmail.com">ivanisekeev0@gmail.com</a></p>
+        </footer>
+    </body>
+    <script type="module" @raw="getBundle('js', 'defer')" webc:keep></script>
+    <style @raw="getBundle('css', 'defer')" webc:keep></style>
+</html>

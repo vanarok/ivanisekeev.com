@@ -1,11 +1,11 @@
 {
-    "name": "alpinejs-htmx",
+    "name": "website",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "packageManager": "pnpm@8.6.0",
     "scripts": {
-        "dev": "eleventy --serve --output dist",
+        "dev": "eleventy --serve --port 3000",
         "build": "PRODUCTION=true eleventy"
     },
     "keywords": [],
@@ -14,16 +14,15 @@
     "dependencies": {
         "@11ty/eleventy-plugin-bundle": "^1.0.4",
         "@11ty/eleventy-plugin-webc": "^0.11.1",
-        "alpinejs": "^3.12.2",
+        "@11ty/is-land": "4.0.0",
         "eleventy-plugin-clean": "^1.2.5",
-        "htmx.org": "^1.9.2",
-        "prettier-config-vanarok": "^1.0.2"
+        "prettier-config-vanarok": "^1.0.3"
     },
     "devDependencies": {
         "@11ty/eleventy": "2.0.2-alpha.2",
-        "@types/alpinejs": "^3.7.1",
-        "@types/node": "^20.2.5",
+        "@types/alpinejs": "^3.7.2",
+        "@types/node": "^20.4.5",
         "nodemon": "^2.0.22",
-        "typescript": "^5.1.3"
+        "typescript": "^5.1.6"
     }
 }

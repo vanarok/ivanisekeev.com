@@ -1,0 +1,66 @@
+<header webc:root>
+    <h2 class="logo">
+        <a href="/">Ivan Svoboda</a>
+    </h2>
+    <nav>
+        <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#services">What i do</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><button class="theme-toggle"></button></li>
+        </ul>
+    </nav>
+</header>
+
+<style webc:scoped>
+    :host {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo a {
+        text-decoration: none;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        float: left;
+        margin: 0;
+    }
+
+    nav li a {
+        display: block;
+        padding: 0 16px;
+    }
+
+    .theme-toggle {
+        background: 0 0;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        outline-offset: 5px;
+    }
+</style>
+
+<script webc:keep>
+    const button = document.querySelector('.theme-toggle')
+    const currentTheme = () => document.documentElement.getAttribute('data-theme')
+    const saveTheme = (theme) => {
+        localStorage.setItem('theme', theme)
+    }
+    const changeTheme = (theme) => {
+        document.documentElement.setAttribute('data-theme', theme)
+        button.textContent = currentTheme() === 'dark' ? '🌙' : '😎'
+        saveTheme(theme)
+    }
+
+    changeTheme(localStorage.getItem('theme') ?? 'light')
+    button.addEventListener('click', () => changeTheme(currentTheme() === 'dark' ? 'light' : 'dark'))
+</script>
