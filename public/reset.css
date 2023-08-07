@@ -113,8 +113,17 @@ body {
 }
 body,
 input {
-    font: var(--desktop-font-size) -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
-        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font:
+        var(--desktop-font-size) -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif,
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
+        'Segoe UI Symbol';
 }
 
 h1,
@@ -334,8 +343,17 @@ sup {
 @media screen and (max-width: 75ch) {
     body,
     input {
-        font: var(--mobile-font-size) -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
-            sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        font:
+            var(--mobile-font-size) -apple-system,
+            BlinkMacSystemFont,
+            'Segoe UI',
+            Roboto,
+            Helvetica,
+            Arial,
+            sans-serif,
+            'Apple Color Emoji',
+            'Segoe UI Emoji',
+            'Segoe UI Symbol';
     }
     table {
         table-layout: auto;

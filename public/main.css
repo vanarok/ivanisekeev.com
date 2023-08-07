@@ -1,8 +1,5 @@
-@import url('reset.css');
-@import url('fonts/fonts.css');
-
 :root {
-    --desktop-font-size: 1.2rem/1.55;
+    --desktop-font-size: 1.5rem/1.55;
     --mobile-font-size: 1rem/1.45;
 }
 
@@ -17,7 +14,9 @@ html[data-theme='light'] {
 
 html,
 body {
-    font: urbanist;
+    font-family: urbanist, serif;
+    font-weight: 500;
+    scroll-behavior: smooth;
 }
 
 html[data-theme='dark'] {
@@ -32,4 +31,9 @@ html[data-theme='dark'] {
 
 html[data-theme='dark'] {
     background: #191919;
+}
+
+main {
+    min-height: 100vh;
+    height: 100vh;
 }

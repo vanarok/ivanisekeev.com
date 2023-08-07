@@ -8,7 +8,7 @@
             <li><a href="#services">What i do</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#blog">Blog</a></li>
-            <li><button class="theme-toggle"></button></li>
+            <li><button aria-label="Theme toggle" class="theme-toggle">😎</button></li>
         </ul>
     </nav>
 </header>
@@ -17,7 +17,12 @@
     :host {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    h2 {
+        margin: 0.5em 1em 0.5em 0;
     }
 
     .logo a {
@@ -26,18 +31,20 @@
 
     nav ul {
         list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5em;
         margin: 0;
         padding: 0;
     }
 
     nav li {
-        float: left;
         margin: 0;
     }
 
     nav li a {
         display: block;
-        padding: 0 16px;
+        padding-right: 0.5em;
     }
 
     .theme-toggle {
@@ -46,6 +53,7 @@
         border-radius: 50%;
         cursor: pointer;
         outline-offset: 5px;
+        font-size: 1em;
     }
 </style>
 

@@ -3,7 +3,6 @@ layout: default.webc
 ---
 
 <div class="logo">Test12</div>
-<div style="height: 150vh"></div>
 <is-land on:visible webc:import="npm:@11ty/is-land">
     <template data-island>
         <script src="https://unpkg.com/petite-vue" defer init webc:keep></script>

@@ -4,19 +4,38 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ivan Svoboda - Experienced Freelance Web Developer | Custom Web Development Services</title>
+        <meta
+            name="description"
+            content="Ivan Svoboda is an experienced freelance web developer offering custom web development services. Specializing in creating high-quality, responsive, and user-friendly websites. Contact now for a free consultation."
+        />
         <style @raw="getBundle('css')" webc:keep></style>
-        <link rel="stylesheet" href="public/main.css" webc:keep />
-        <link rel="icon" href="public/favicon.png" type="image/png" webc:keep />
         <script type="module" @raw="getBundle('js')" webc:keep></script>
+        <link rel="icon" href="public/favicon.png" type="image/png" webc:keep />
+        <link
+            rel="stylesheet"
+            rel="preload"
+            as="style"
+            href="public/reset.css"
+            webc:keep
+            media="none"
+            onload="if(media!=='all')media='all'"
+        />
+        <link
+            rel="stylesheet"
+            rel="preload"
+            media="none"
+            webc:keep
+            onload="if(media!=='all')media='all'"
+            href="public/fonts/fonts.css"
+        />
+        <link rel="stylesheet" href="public/main.css" webc:keep media="none" onload="if(media!=='all')media='all'" />
     </head>
     <body>
         <header webc:import="site-header.webc"></header>
-        <main @raw="content" webc:nokeep></main>
+        <main @raw="content"></main>
 
         <footer>
-            <p>© 2023 Ivan Svoboda</p>
-            <p>All Rights Reserved</p>
-            <p>Contact Information: <a href="mailto:ivanisekeev0@gmail.com">ivanisekeev0@gmail.com</a></p>
+            <p>© 2023 <a href="/">Ivan Svoboda</a></p>
         </footer>
     </body>
     <script type="module" @raw="getBundle('js', 'defer')" webc:keep></script>
