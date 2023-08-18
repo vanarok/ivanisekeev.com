@@ -1,0 +1,57 @@
+<header webc:root>
+    <h2 class="logo">
+        <a href="/">Ivan Isekeev</a>
+    </h2>
+    <nav>
+        <ul>
+            <li><a href="#about">About me</a></li>
+            <li>
+                <ThemeToggle webc:import="ThemeToggle.webc" />
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<style webc:scoped>
+    :host {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    h2 {
+        margin: 0.5em 1em 0.5em 0;
+    }
+
+    .logo a {
+        text-decoration: none;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5em;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    nav li a {
+        display: block;
+        padding-right: 0.5em;
+    }
+
+    .theme-toggle {
+        background: 0 0;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        outline-offset: 5px;
+        font-size: 1em;
+    }
+</style>

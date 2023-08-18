@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ivan Isekeev - Experienced Freelance Web Developer | Custom Web Development Services</title>
+        <meta
+            name="description"
+            content="Ivan Isekeev is an experienced freelance web developer offering custom web development services. Specializing in creating high-quality, responsive, and user-friendly websites. Contact now for a free consultation."
+        />
+        <link rel="icon" href="public/favicon.png" type="image/png" webc:keep />
+        <link rel="stylesheet" href="public/reset.css" webc:keep />
+        <link rel="stylesheet" href="public/fonts/fonts.css" webc:keep />
+        <link rel="stylesheet" href="public/main.css" webc:keep />
+        <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
+        <style :href="getBundleFileUrl('css', 'defer')" webc:keep></style>
+        <script type="module" defer :src="getBundleFileUrl('js', 'defer')" webc:keep></script>
+    </head>
+    <body>
+        <header webc:import="SiteHeader.webc"></header>
+        <main @raw="content"></main>
+
+        <footer style="text-align: center">
+            <p>© 2023 <a href="/">Ivan Isekeev</a></p>
+        </footer>
+    </body>
+</html>

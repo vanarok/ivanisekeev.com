@@ -1,14 +1,63 @@
 ---
-layout: default.webc
+layout: App.webc
 ---
 
-<div class="logo">Test12</div>
-<is-land on:visible webc:import="npm:@11ty/is-land">
-    <template data-island>
-        <script src="https://unpkg.com/petite-vue" defer init webc:keep></script>
-        <div v-scope="{ count: 0 }">
-            <span v-text="count">0</span>
-            <button v-on:click="count++">inc</button>
-        </div>
-    </template>
-</is-land>
+<template webc:root>
+    <header>
+        <h1>I make high-quality user-friendly websites.</h1>
+    </header>
+    <article>
+        <section>
+            <p>
+                With 5 years of experience, I've gained proficiency as a mid-level full-stack web developer, capable of
+                creating any type of website.
+            </p>
+            <p>
+                I also excel in project planning, research, and sourcing necessary resources like designers or servers.
+            </p>
+        </section>
+        <figure>
+            <img src="public/face.webp" alt="Ivan Isekeev" />
+            <figcaption>Ivan Isekeev</figcaption>
+        </figure>
+    </article>
+</template>
+
+<style webc:scoped>
+    :host {
+        display: flex;
+    }
+
+    header {
+    }
+
+    h1 {
+        border: none;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1em;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        gap: 0 1em;
+    }
+
+    p {
+        width: 50%;
+    }
+
+    figure,
+    img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+</style>

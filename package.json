@@ -6,7 +6,8 @@
     "packageManager": "pnpm@8.6.0",
     "scripts": {
         "dev": "eleventy --serve --port 3000",
-        "build": "PRODUCTION=true eleventy"
+        "build": "PRODUCTION=true eleventy",
+        "deploy:pages": "pnpm build && tar -C dist -cvz . > site.tar.gz && hut pages publish -d ivanisekeev.com site.tar.gz"
     },
     "keywords": [],
     "author": "",
@@ -21,7 +22,7 @@
     "devDependencies": {
         "@11ty/eleventy": "2.0.2-alpha.2",
         "@types/alpinejs": "^3.7.2",
-        "@types/node": "^20.4.5",
+        "@types/node": "^20.4.10",
         "nodemon": "^2.0.22",
         "typescript": "^5.1.6"
     }

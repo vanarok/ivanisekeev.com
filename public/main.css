@@ -32,8 +32,3 @@ html[data-theme='dark'] {
 html[data-theme='dark'] {
     background: #191919;
 }
-
-main {
-    min-height: 100vh;
-    height: 100vh;
-}

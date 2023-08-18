@@ -1,0 +1,16 @@
+<script webc:bucket="defer">
+    const button = document.querySelector('.theme-toggle')
+    const currentTheme = () => document.documentElement.getAttribute('data-theme')
+    const saveTheme = (theme) => {
+        localStorage.setItem('theme', theme)
+    }
+    const changeTheme = (theme) => {
+        document.documentElement.setAttribute('data-theme', theme)
+        button.textContent = currentTheme() === 'dark' ? '🌙' : '😎'
+        saveTheme(theme)
+    }
+
+    changeTheme(localStorage.getItem('theme') ?? 'light')
+    button.addEventListener('click', () => changeTheme(currentTheme() === 'dark' ? 'light' : 'dark'))
+</script>
+<button aria-label="Theme toggle" class="theme-toggle">😎</button>
