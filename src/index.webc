@@ -2,7 +2,7 @@
 layout: App.webc
 ---
 
-<template webc:root>
+<main>
     <header>
         <h1>I make high-quality user-friendly websites.</h1>
     </header>
@@ -16,15 +16,12 @@ layout: App.webc
                 I also excel in project planning, research, and sourcing necessary resources like designers or servers.
             </p>
         </section>
-        <figure>
-            <img src="public/face.webp" alt="Ivan Isekeev" />
-            <figcaption>Ivan Isekeev</figcaption>
-        </figure>
+        <img src="public/my-photo-1.jpg" alt="Ivan Isekeev" width="600" height="400" />
     </article>
-</template>
+</main>
 
 <style webc:scoped>
-    :host {
+    main {
         display: flex;
     }
 
@@ -33,14 +30,26 @@ layout: App.webc
 
     h1 {
         border: none;
+        animation: slide-up 0.5s ease-out;
+        text-align: center;
+    }
+
+    @keyframes slide-up {
+        0% {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 
     article {
         display: flex;
-        flex-direction: column;
-        padding: 0 1em;
-        align-items: center;
+        flex-direction: row;
         align-content: space-around;
+        gap: 0 1em;
     }
 
     section {
@@ -51,13 +60,25 @@ layout: App.webc
 
     p {
         width: 50%;
+        text-align: justify;
     }
 
-    figure,
+    @media (max-width: 768px) {
+        p {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        section {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
     img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
+        width: 600px;
+        height: 400px;
+        border-radius: 10px;
     }
 </style>
