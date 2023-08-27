@@ -9,11 +9,17 @@
             content="Ivan Isekeev is an experienced freelance web developer offering custom web development services. Specializing in creating high-quality, responsive, and user-friendly websites. Contact now for a free consultation."
         />
         <link rel="icon" href="public/favicon.png" type="image/png" webc:keep />
-        <link rel="stylesheet" href="public/fonts/fonts.css" webc:keep />
         <link rel="stylesheet" href="public/main.css" webc:keep />
         <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
-        <script type="module" defer :src="getBundleFileUrl('js', 'defer')" webc:keep></script>
         <link rel="stylesheet" rel="preload" as="style" :href="getBundleFileUrl('css', 'defer')" webc:keep />
+        <script webc:keep>
+            if (localStorage.getItem('theme') === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light')
+            } else if (localStorage.getItem('theme') === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark')
+            }
+        </script>
+        <script type="module" defer :src="getBundleFileUrl('js', 'defer')" webc:keep></script>
     </head>
     <body>
         <header webc:import="SiteHeader.webc"></header>
