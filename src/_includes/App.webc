@@ -3,22 +3,20 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ivan Isekeev - Experienced Freelance Web Developer | Custom Web Development Services</title>
+        <title>Ivan Isekeev - Experienced Web Developer | Custom Web Development Services</title>
         <meta
             name="description"
-            content="Ivan Isekeev is an experienced freelance web developer offering custom web development services. Specializing in creating high-quality, responsive, and user-friendly websites. Contact now for a free consultation."
+            content="Ivan Isekeev is an experienced web developer offering custom web development services. Specializing in creating high-quality, responsive, and user-friendly websites. Contact now for a free consultation."
         />
         <link rel="icon" href="public/favicon.png" type="image/png" webc:keep />
-        <link rel="stylesheet" href="public/main.css" webc:keep />
-        <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
+
+        <!-- Critical resources -->
+        <style @raw="getBundle('css')" webc:keep></style>
+        <script @raw="getBundle('js')" webc:keep></script>
+
+        <!-- Deferred resources -->
+        <link rel="stylesheet" href="main.css" webc:bucket="defer" />
         <link rel="stylesheet" rel="preload" as="style" :href="getBundleFileUrl('css', 'defer')" webc:keep />
-        <script webc:keep>
-            if (localStorage.getItem('theme') === 'light') {
-                document.documentElement.setAttribute('data-theme', 'light')
-            } else if (localStorage.getItem('theme') === 'dark') {
-                document.documentElement.setAttribute('data-theme', 'dark')
-            }
-        </script>
         <script type="module" defer :src="getBundleFileUrl('js', 'defer')" webc:keep></script>
     </head>
     <body>

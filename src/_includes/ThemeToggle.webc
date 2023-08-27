@@ -1,5 +1,13 @@
 <button aria-label="Theme toggle" class="theme-toggle">☀️</button>
 
+<script>
+    if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light')
+    } else if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark')
+    }
+</script>
+
 <script webc:bucket="defer">
     const button = document.querySelector('.theme-toggle')
     const currentTheme = () => document.documentElement.getAttribute('data-theme')

@@ -7,7 +7,7 @@
     "scripts": {
         "dev": "eleventy --serve --port 3000",
         "build": "PRODUCTION=true eleventy",
-        "prod": "pnpm build && tar -C dist -cvz . > site.tar.gz && hut pages publish -d ivanisekeev.com site.tar.gz"
+        "prod": "trash ./dist && pnpm build && tar -C dist -cvz . > site.tar.gz && hut pages publish -d ivanisekeev.com site.tar.gz"
     },
     "keywords": [],
     "author": "",
