@@ -9,7 +9,6 @@
             content="Ivan Isekeev is an experienced freelance web developer offering custom web development services. Specializing in creating high-quality, responsive, and user-friendly websites. Contact now for a free consultation."
         />
         <link rel="icon" href="public/favicon.png" type="image/png" webc:keep />
-        <link rel="stylesheet" href="public/reset.css" webc:keep />
         <link rel="stylesheet" href="public/fonts/fonts.css" webc:keep />
         <link rel="stylesheet" href="public/main.css" webc:keep />
         <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
