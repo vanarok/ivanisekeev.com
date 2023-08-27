@@ -252,6 +252,19 @@ img {
     display: block;
     height: auto;
     max-width: 100%;
+    animation: bg-animation 5s infinite;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-color: rgb(250, 250, 250);
+    }
+    50% {
+        background-color: rgb(240, 240, 240);
+    }
+    100% {
+        background-color: rgb(250, 250, 250);
+    }
 }
 
 figure {
