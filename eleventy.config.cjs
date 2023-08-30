@@ -5,6 +5,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(clean)
     eleventyConfig.addPlugin(pluginWebc)
     eleventyConfig.addPassthroughCopy('public')
+    eleventyConfig.addPassthroughCopy({
+        'src/assets': 'assets',
+    })
     return {
         dir: {
             input: 'src',
