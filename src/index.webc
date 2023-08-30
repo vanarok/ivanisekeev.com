@@ -2,7 +2,7 @@
 layout: App.webc
 ---
 
-<main>
+<article>
     <header>
         <h1>I make high-quality user-friendly websites.</h1>
     </header>
@@ -18,20 +18,12 @@ layout: App.webc
         </section>
         <img src="public/my-photo-1.jpg" alt="Ivan Isekeev" width="300" height="400" />
     </article>
-</main>
+</article>
 
 <style webc:scoped>
-    main {
-        display: flex;
-    }
-
-    header {
-    }
-
     h1 {
         border: none;
         animation: slide-up 0.5s ease-out;
-        text-align: center;
     }
 
     @keyframes slide-up {
@@ -63,8 +55,12 @@ layout: App.webc
     }
 
     @media screen and (max-width: 130ch) {
+        h1 {
+            text-align: center;
+        }
+
         p {
-            width: 100%;
+            width: 50%;
         }
         section {
             flex-direction: column;

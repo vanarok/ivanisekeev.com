@@ -21,7 +21,7 @@
     </head>
     <body>
         <header webc:import="SiteHeader.webc"></header>
-        <template @raw="content" webc:nokeep></template>
+        <main @raw="content"></main>
 
         <footer style="text-align: center">
             <p>© 2023 <a href="/">Ivan Isekeev</a></p>
