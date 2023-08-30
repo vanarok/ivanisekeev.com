@@ -2,7 +2,7 @@
 layout: App.webc
 ---
 
-# Import logs from chromium (chrome) dev tools
+# Export logs from chromium (chrome) dev tools
 
 1. Open debug tools:
 
