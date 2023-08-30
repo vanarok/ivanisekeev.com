@@ -2,3 +2,4 @@ node_modules
 .gitlab-ci-local
 dist
 .plugin-clean
+site.tar.gz
