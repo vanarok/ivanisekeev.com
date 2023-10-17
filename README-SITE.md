@@ -1,4 +1,4 @@
-# ivansvoboda.com
+# personal-site.com
 
 ## Usage
 

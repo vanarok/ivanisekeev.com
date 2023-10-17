@@ -10,7 +10,7 @@
     :class="$style.logo"
     @click="$router.push('/')"
   >
-    Ivan Svoboda
+    Ivan  Isekeev 
   </h1>
 </template>
 

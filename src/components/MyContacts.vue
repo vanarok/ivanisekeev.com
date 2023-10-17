@@ -9,10 +9,10 @@ const { locale } = useI18n()
   <div v-if="!upworkReferer" md:text-left pb-5>
     <a
       icon-btn
-      href="mailto:ivanisekeev0@gmail.com?subject=ivansvoboda.com: Your subject&body=Greeting. My name is ..."
+      href="mailto:hello@ivanisekeev.com?subject=ivanisekeev.com: Your subject&body=Greeting. My name is ..."
     >
       <div i-carbon-email align-text-bottom flex-inline mr-2 />
-      ivanisekeev0@gmail.com
+     hello@ivanisekeev.com 
     </a>
   </div>
   <div flex justify-center md:justify-between gap-3>

@@ -239,9 +239,9 @@ export function useProjects() {
     }
   })
 
-  const ivansvoboda = computed(() => {
+  const personalSite = computed(() => {
     return {
-      name: 'ivansvoboda',
+      name: 'personal-site',
       skills: [
         'TypeScript',
         'PostCSS',
@@ -281,9 +281,9 @@ export function useProjects() {
         },
       ],
       description: [
-        t('projects.ivansvoboda.description1'),
-        t('projects.ivansvoboda.description2'),
-        t('projects.ivansvoboda.description3'),
+        t('projects.personal-site.description1'),
+        t('projects.personal-site.description2'),
+        t('projects.personal-site.description3'),
       ],
     }
   })
@@ -294,7 +294,7 @@ export function useProjects() {
       screenpixel.value,
       xwave.value,
       crmSf.value,
-      ivansvoboda.value,
+      personalSite.value,
     ]
   })
 

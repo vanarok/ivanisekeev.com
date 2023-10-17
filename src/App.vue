@@ -3,14 +3,14 @@
 // you can use this to manipulate the document head in any components,
 // they will be rendered correctly in the html results with vite-ssg
 useHead({
-  title: 'Ivan Svoboda',
+  title: 'Ivan Isekeev',
   meta: [
-    { name: 'description', content: 'Ivan Svoboda`s personal website' },
-    { name: 'author', content: 'Ivan Svoboda' },
+    { name: 'description', content: 'Ivan Isekeev`s personal website' },
+    { name: 'author', content: 'Ivan Isekeev' },
     {
       name: 'keywords',
       content:
-        'HTML, CSS, JavaScript, TypeScript, Vue, Personal, Ivan, Svoboda, Vanarok',
+        'HTML, CSS, JavaScript, TypeScript, Vue, Personal, Ivan, Isekeev, Vanarok',
     },
     {
       name: 'theme-color',
