@@ -4,8 +4,16 @@
 
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
+image: gitpod/workspace-node-lts
+
 tasks:
-  - init: pnpm install && pnpm run build
-    command: pnpm run dev
-
-
+  - name: setup
+    init: pnpm install 
+    command: pnpm run dev 
+ports:
+    - port: 8412
+      onOpen: ignore 
+      name: Website
+      description: Website Preview
+      visibility: private
+      protocol: https
