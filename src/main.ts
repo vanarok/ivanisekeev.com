@@ -1,20 +1,17 @@
 import { ViteSSG } from 'vite-ssg'
 import { setupLayouts } from 'virtual:generated-layouts'
-import Previewer from 'virtual:vue-component-preview'
 import App from './App.vue'
 import type { UserModule } from './types'
-import generatedRoutes from '~pages'
+import { routes } from 'vue-router/auto/routes'
 
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'
 
-const routes = setupLayouts(generatedRoutes)
-
 // https://github.com/antfu/vite-ssg
 export const createApp = ViteSSG(
   App,
-  { routes, base: import.meta.env.VITE_BASE_URL ?? '/' },
+  { routes: setupLayouts(routes), base: import.meta.env.VITE_BASE_URL ?? '/' },
   (ctx) => {
     // install all modules under `modules/`
     Object.values(
@@ -22,6 +19,5 @@ export const createApp = ViteSSG(
         eager: true,
       }),
     ).forEach((i) => i.install?.(ctx))
-    ctx.app.use(Previewer)
   },
 )

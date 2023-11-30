@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import { useRoute } from 'vue-router';
+import { useI18n } from 'vue-i18n';
+import { useToggleDark } from '~/composables/dark';
+
 const { t, locale } = useI18n()
 
 const toggleLocales = () => {

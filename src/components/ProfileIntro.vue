@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import MyContacts from './MyContacts.vue'
+</script>
 
 <template>
   <div>

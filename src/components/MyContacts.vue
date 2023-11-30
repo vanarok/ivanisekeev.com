@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { useRoute } from 'vue-router';
+import { useI18n } from 'vue-i18n';
+
 const route = useRoute()
 const upworkReferer = route.query.referer === 'upwork'
 

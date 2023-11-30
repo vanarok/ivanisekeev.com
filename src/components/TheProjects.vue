@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import type { Project } from '~/types'
+import { useProjects } from '~/composables/projects'
+import { useI18n } from 'vue-i18n'
+import ProjectItem from './ProjectItem.vue'
+
 const { t } = useI18n()
 
 const projects = useProjects() as unknown as Project[]

@@ -7,13 +7,12 @@
 image: gitpod/workspace-node-lts
 
 tasks:
-  - name: setup
+  - name: run dev server
     init: pnpm install 
     command: pnpm run dev 
 ports:
-    - port: 8412
+    - port: 3000
       onOpen: ignore 
-      name: Website
-      description: Website Preview
+      name: Dev server
       visibility: private
       protocol: https

@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import NavigationList from './NavigationList.vue'
 import AppLogo from './AppLogo.vue'
+import TheAppBarActions from './TheAppBarActions.vue'
 </script>
 
 <template>
   <header backdrop-blur :class="$style.appBar">
     <AppLogo />
+    <TheAppBarActions />
     <NavigationList />
   </header>
   <div class="h-4rem" />

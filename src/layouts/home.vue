@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import TheAppBar from '~/components/TheAppBar.vue'
+import TheFooter from '~/components/TheFooter.vue'
+</script>
+
 <template>
   <TheAppBar />
   <main
@@ -5,5 +10,4 @@
   >
     <RouterView />
   </main>
-  <TheFooter />
 </template>

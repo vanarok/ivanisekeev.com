@@ -1,7 +1,9 @@
 <script setup lang="ts">
-// https://github.com/vueuse/head
-// you can use this to manipulate the document head in any components,
-// they will be rendered correctly in the html results with vite-ssg
+import { useRouter } from 'vue-router';
+import { useHead } from '@vueuse/head';
+import { isDark, preferredDark } from './composables/dark';
+import { computed } from 'vue'
+
 useHead({
   title: 'Ivan Isekeev',
   meta: [

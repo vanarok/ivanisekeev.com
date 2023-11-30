@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import PhotoPortrait from './PhotoPortrait.vue'
+import ProfileIntro from './ProfileIntro.vue'
+</script>
 
 <template>
   <div flex flex-col items-center md="flex-row gap-10 h-50 w-full">
