@@ -5,7 +5,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <nav text-xs md:text-base ml-auto flex flex-row gap-2 md:gap-6>
+  <nav ml-auto flex flex-row gap-2 md:gap-6>
     <RouterLink class="icon-btn flex items-center gap-2" to="/">
       <div i-carbon-campsite />
       {{ t('button.home') }}
