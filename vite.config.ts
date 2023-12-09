@@ -20,13 +20,6 @@ import VueMacros from 'unplugin-vue-macros/vite'
 import { Vuetify3Resolver } from 'unplugin-vue-components/resolvers'
 
 export default defineConfig({
-  server: {
-    https: {
-      key: fs.readFileSync('./.cert/key.pem'),
-      cert: fs.readFileSync('./.cert/cert.pem'),
-    },
-  },
-
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
