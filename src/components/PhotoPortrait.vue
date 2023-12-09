@@ -1,5 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <v-img src="/face.webp" class="rounded-full" lazy-src="/face-lazy.webp" />
+  <v-img src="/face.webp" class="rounded-full" lazy-src="/face-lazy.webp" alt="Ivan Isekeev"/>
 </template>
