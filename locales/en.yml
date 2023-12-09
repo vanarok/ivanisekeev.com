@@ -5,6 +5,7 @@ button:
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
   projects: Projects
+  blog: Blog
 profile:
   specialization: full-stack
   js: JavaScript

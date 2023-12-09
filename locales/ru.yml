@@ -6,6 +6,7 @@ button:
   toggle_dark: Включить темный режим
   toggle_langs: Сменить язык
   projects: Проекты
+  blog: Блог
 profile:
   specialization: full-stack
   js: JavaScript

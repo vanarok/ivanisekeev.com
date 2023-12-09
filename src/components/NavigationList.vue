@@ -14,5 +14,8 @@ const { t } = useI18n()
       <div i-carbon-badge />
       {{ t('button.projects') }}
     </RouterLink>
+    <a class="icon-btn flex items-center gap-2" href="https://dev.to/vanarok">
+      <div i-carbon-blog />
+      {{ t(`button.blog`) }}</a>
   </nav>
 </template>
