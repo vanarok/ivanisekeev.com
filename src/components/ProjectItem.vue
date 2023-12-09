@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Navigation, Pagination } from 'swiper'
+import { Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import type { Picture } from '~/types'
 
