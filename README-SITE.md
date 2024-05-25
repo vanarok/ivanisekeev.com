@@ -1,4 +1,5 @@
-# personal-site.com
+# ivanisekeev.com
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3ecd1eae-1e2e-49a2-9cde-71974a57f30c/deploy-status)](https://app.netlify.com/sites/ivanisekeev/deploys)
 
 ## Usage
 
