@@ -1,0 +1,46 @@
+<!doctype html>
+<html :lang="page.lang" dir="ltr" data-theme="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivan Isekeev - Personal Site</title>
+    <meta name="description" content="Ivan Isekeev - Personal Site" />
+    <meta name="author" content="Ivan Isekeev" />
+    <link rel="icon" href="/assets/favicons/favicon.png" type="image/png" webc:keep />
+
+    <!-- Critical resources -->
+    <style @raw="getBundle('css')" webc:keep></style>
+    <script @raw="getBundle('js')" webc:keep></script>
+
+    <!-- Deferred resources -->
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-solarizedlight.css" rel="stylesheet" webc:keep />
+    <link rel="stylesheet" href="main.css" webc:bucket="defer" />
+    <link rel="stylesheet" rel="preload" as="style" :href="getBundleFileUrl('css', 'defer')" webc:keep />
+    <script type="module" defer :src="getBundleFileUrl('js', 'defer')" webc:keep></script>
+
+    <!-- alternate languages -->
+    <link rel="alternate" :hreflang="page.lang" :href="'https://ivanisekeev.com' + page.url" />
+    <template webc:root webc:for="link of locale_links(page.url)">
+        <link rel="alternate" :hreflang="link.lang" :href="'https://ivanisekeev.com' + link.url" />
+    </template>
+    <link rel="alternate" hreflang="x-default" :href="'https://ivanisekeev.com' + locale_url(page.url, 'en')" />
+</head>
+</head>
+
+<body>
+    <the-header @attributes="this.$data"></the-header>
+
+    <main>
+        <script webc:type="js">
+        if (!this.template) {
+            throw new Error("oh no template not found");
+		}
+        `<template webc:is="${this.template}" @attributes="(this.$data)"></template>`
+        </script>
+    </main>
+
+    <the-footer @attributes="this.$data"></the-footer>
+</body>
+
+</html>

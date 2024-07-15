@@ -1,0 +1,53 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="21">
+            <item index="0" class="java.lang.String" itemvalue="webc:scoped" />
+            <item index="1" class="java.lang.String" itemvalue="webc:keep" />
+            <item index="2" class="java.lang.String" itemvalue="@raw" />
+            <item index="3" class="java.lang.String" itemvalue="webc:import" />
+            <item index="4" class="java.lang.String" itemvalue="webc:bucket" />
+            <item index="5" class="java.lang.String" itemvalue="webc:root" />
+            <item index="6" class="java.lang.String" itemvalue="11ty:type" />
+            <item index="7" class="java.lang.String" itemvalue="webc:type" />
+            <item index="8" class="java.lang.String" itemvalue="@html" />
+            <item index="9" class="java.lang.String" itemvalue=":href" />
+            <item index="10" class="java.lang.String" itemvalue=":@date" />
+            <item index="11" class="java.lang.String" itemvalue=":@title" />
+            <item index="12" class="java.lang.String" itemvalue=":@content" />
+            <item index="13" class="java.lang.String" itemvalue=":@collections" />
+            <item index="14" class="java.lang.String" itemvalue="webc:is" />
+            <item index="15" class="java.lang.String" itemvalue=":@page" />
+            <item index="16" class="java.lang.String" itemvalue="webc:for" />
+            <item index="17" class="java.lang.String" itemvalue="@text" />
+            <item index="18" class="java.lang.String" itemvalue=":hreflang" />
+            <item index="19" class="java.lang.String" itemvalue="@test" />
+            <item index="20" class="java.lang.String" itemvalue=":lang" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="8">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="eleventy-image" />
+            <item index="7" class="java.lang.String" itemvalue="article-card-item" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="XmlUnboundNsPrefix" enabled="true" level="INFORMATION" enabled_by_default="true" editorAttributes="INFORMATION_ATTRIBUTES" />
+  </profile>
+</component>

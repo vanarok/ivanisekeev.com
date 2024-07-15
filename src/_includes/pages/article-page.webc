@@ -1,0 +1,24 @@
+<article webc:root="override">
+    <h1 class="article-title" @text="title"></h1>
+    <span class="article-date" @text="postDate(date, page.lang)"></span>
+    <template webc:root class="article-description" @raw="content"></template>
+</article>
+
+<style webc:scoped>
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+    :host {
+        margin: 0 auto;
+    }
+
+    .article-date {
+        color: gray;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 64rem) {      :host {
+            max-width: 48rem;
+        }
+    }
+</style>

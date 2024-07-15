@@ -1,29 +1,31 @@
 {
-    "name": "website",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "packageManager": "pnpm@8.6.0",
-    "scripts": {
-        "dev": "eleventy --serve --port 3000",
-        "build": "PRODUCTION=true eleventy",
-        "prod": "trash ./dist && pnpm build && tar -C dist -cvz . > site.tar.gz && hut pages publish -d ivanisekeev.com site.tar.gz"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "@11ty/eleventy-plugin-bundle": "^1.0.4",
-        "@11ty/eleventy-plugin-webc": "^0.11.1",
-        "@11ty/is-land": "4.0.0",
-        "eleventy-plugin-clean": "^1.2.5",
-        "prettier-config-vanarok": "^1.0.3"
-    },
-    "devDependencies": {
-        "@11ty/eleventy": "2.0.2-alpha.2",
-        "@types/alpinejs": "^3.7.2",
-        "@types/node": "^20.4.10",
-        "nodemon": "^2.0.22",
-        "typescript": "^5.1.6"
-    }
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel watch:*",
+    "watch:eleventy": "eleventy --serve --port 3000",
+    "watch:cms": "npx decap-server",
+    "build": "PRODUCTION=true eleventy",
+    "prod": "trash ./dist && pnpm build && tar -C dist -cvz . > site.tar.gz && hut pages publish -d ivanisekeev.com site.tar.gz"
+  },
+  "dependencies": {
+    "@11ty/eleventy-plugin-bundle": "^1.0.4",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@11ty/eleventy-plugin-webc": "^0.11.2",
+    "@11ty/is-land": "4.0.0",
+    "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
+    "@sindresorhus/slugify": "^2.2.1",
+    "eleventy-plugin-clean": "^1.2.5",
+    "luxon": "^3.4.4",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "2.0.2-alpha.2",
+    "@11ty/eleventy-img": "^4.0.2",
+    "@types/alpinejs": "^3.7.2",
+    "@types/node": "^20.4.10",
+    "nodemon": "^2.0.22",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.1.6"
+  }
 }

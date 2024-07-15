@@ -1,0 +1,39 @@
+# tell netlify about your build script and output directory
+
+[build]
+publish = "dist"
+command = "pnpm run build"
+
+# redirect to russian or english landing pages
+
+[[redirects]]
+from = "/"
+to = "/en"
+status = 302
+force= true
+conditions = {Language = ["en"]}
+
+[[redirects]]
+from = "/"
+to = "/ru"
+status = 302
+force = true
+conditions = {Language = ["ru"]}
+
+[[redirects]]
+from = "/"
+to = "/en"
+status = 302
+force = true
+
+# redirect the 404 pages to your specific variant.
+
+[[redirects]]
+from = "/ru/*"
+to = "/ru/404"
+status = 404
+
+[[redirects]]
+from = "/en/*"
+to = "/en/404"
+status = 404

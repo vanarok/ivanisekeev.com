@@ -1,0 +1,18 @@
+<section webc:root="override" class="articles">
+    <h1 class="title" @text="title"></h1>
+    <ul class="articles-list" webc:if="collections.articles?.length > 0">
+        <article-card-item webc:if="article.data.page.lang === page.lang" webc:for="article of collections.articles"
+            :@article="article" :@page="page" :@localization="localization"></article-card-item>
+    </ul>
+</section>
+
+<style webc:scoped>
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+    .articles-list {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        }
+    }
+</style>

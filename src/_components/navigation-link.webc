@@ -1,0 +1,25 @@
+<li webc:root="override">
+    <a :href="locale_url(navigation.link)" @text="navigation.label"></a>
+</li>
+
+<style webc:scoped>
+a {
+    text-decoration: none;
+    margin: 1em 0 0;
+    background: var(--background-secondary-color);
+    border: solid;
+    transform: rotate(-5deg);
+    padding-left: 0.5em;
+    display: block;
+    padding-right: 0.5em;
+    font-weight: bold;
+    box-shadow: 0.2em 0.2em 0;
+}
+
+
+a:hover {
+    transform: rotate(5deg) translateX(-0.2em) translateY(-0.2em);
+    transition: all 0.1s ease;
+    color: var(--link-color)
+}
+</style>

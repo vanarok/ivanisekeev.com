@@ -1,0 +1,60 @@
+<header webc:root="override">
+    <div class="left-container">
+        <theme-toggle></theme-toggle>
+    
+        <a :href="locale_url('/')">
+            <eleventy-image width="1024px" height="1024px" class="logo" src="src/assets/images/logo.png" alt="Ivan Isekeev logo"></eleventy-image>
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <navigation-link webc:for="(key, value) in navigation[page.lang]" :@navigation="value"></navigation-link>
+        </ul>
+    </nav>
+</header>
+
+<style webc:scoped>
+/* Mobile */
+@media screen and (min-width: 0rem) {
+    :host {
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .left-container {
+        font-size: 2em;
+        margin: 0.5em 1em 0.5em 0;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    .logo {
+        height: 1.2em;
+        width: 6em;
+        object-fit: cover;
+        margin: 0;
+        filter: invert(var(--invert));
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5em;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 64rem) {
+    .logo {
+        margin: 0.5em 0.5em 0.5em 0;
+    }
+
+}
+</style>

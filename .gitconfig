@@ -1,0 +1,4 @@
+[remote "mirror"]
+	url = https://github.com/vanarok/personal-site.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	glab-resolved = base

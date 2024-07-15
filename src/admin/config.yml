@@ -1,0 +1,64 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "src/assets/images/blog"
+public_folder: "/assets/images/blog"
+
+i18n:
+  # Required and can be one of multiple_folders, multiple_files or single_file
+  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+  # single_file - persists a single file in `<folder>/<slug>.<extension>`
+  structure: multiple_folders
+
+  # Required - a list of locales to show in the editor UI
+  locales: [ ru, en ]
+
+  # Optional, defaults to the first item in locales.
+  # The locale to be used for fields validation and as a baseline for the entry.
+  default_locale: ru
+
+  slug:
+    encoding: "unicode"
+    clean_accents: true
+    sanitize_replacement: "_"
+
+collections:
+  - name: "articles"
+    label: "Articles"
+    folder: "src/content/articles"
+    create: true
+    i18n: true
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Date", name: "date", widget: "datetime", i18n: duplicate }
+      - { label: "Featured Image", name: "image", widget: "image", i18n: duplicate }
+      - { label: "Image Caption", name: "imageAlt", widget: "string", i18n: true }
+      - { label: "Body", name: "body", widget: "markdown" , i18n: true }
+
+  - name: "pages"
+    label: "Pages"
+    folder: "src/content/pages"
+    create: true
+    slug: "{{fields.slug}}"
+    i18n: true
+    identifier_field: "slug"
+    fields:
+      - { label: "Slug", name: "slug", widget: "string", i18n: duplicate }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Template", name: "template", widget: "string", i18n: duplicate }
+      - { label: "Body", name: "body", widget: "markdown", required: false, 18n: true }
+
+  - label: "Navigation Links"
+    name: 'navigation'
+    folder: 'src/_data/navigation'
+    slug: "{{link}}"
+    format: "json"
+    i18n: true
+    create: true
+    fields:
+      - { label: "Label", name: "label", widget: "string", i18n: true }
+      - { label: "Link", name: "link", widget: "string", i18n: duplicate }

@@ -1,1 +1,4 @@
-prettier-config-vanarok
+{
+  "tabWidth": 2,
+  "useTabs": false
+}
