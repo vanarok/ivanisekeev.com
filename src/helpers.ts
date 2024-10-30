@@ -1,3 +1,3 @@
 export function getSiteName() {
-  return window.location.hostname
+  return import.meta.env.VITE_SITE_NAME
 }
