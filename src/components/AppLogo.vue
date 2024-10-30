@@ -1,4 +1,17 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+function getLogoText() {
+  const site = 2
+
+  switch (site) {
+    case 1:
+      return 'Ivan Isekeev'
+    case 2:
+      return 'Flap webdesign'
+    default:
+      return 'Ivan Isekeev'
+  }
+}
+</script>
 
 <template>
   <h1
@@ -8,9 +21,10 @@
     md:text-3xl
     cursor-pointer
     :class="$style.logo"
+    ]
     @click="$router.push('/')"
   >
-    Ivan  Isekeev 
+    {{ getLogoText() }}
   </h1>
 </template>
 
