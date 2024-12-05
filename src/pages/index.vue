@@ -43,7 +43,7 @@ const creatorOf = [
 </script>
 
 <template>
-  <div class="flex flex-col items-center" md="flex-row gap-10 w-full mt-10">
+  <div class="flex flex-col" md="flex-row gap-10 w-full mt-10">
     <div class="h-full">
       <div class="flex flex-row gap-4">
         <v-img
