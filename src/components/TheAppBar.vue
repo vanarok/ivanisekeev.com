@@ -15,10 +15,6 @@ const upworkReferer = route.query.referer === 'upwork'
 
 const links = [
   {
-    localeKey: 'button.home',
-    to: '/',
-  },
-  {
     localeKey: 'button.projects',
     to: '/projects',
   },
@@ -38,14 +34,16 @@ const links = [
     <AppLogo />
 
     <nav class="ml-auto flex flex-row gap-2 md:gap-6">
-      <RouterLink
+      <component
+        :is="link.to.startsWith('/') ? RouterLink : 'a'"
         v-for="link in links"
         :key="link.localeKey"
         class="icon-btn flex items-center gap-2"
         :to="link.to"
+        :href="link.to"
       >
         {{ t(link.localeKey) }}
-      </RouterLink>
+      </component>
     </nav>
 
     <button
