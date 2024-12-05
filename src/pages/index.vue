@@ -68,7 +68,7 @@ const creatorOf = [
 
   <div class="flex text-left mb-6 mt-7">
     <div class="flex items-center gap-1">
-      Creator of
+      {{ t('profile.creatorListLabel') }}
       <a
         v-for="creator in creatorOf"
         :key="creator.name"
@@ -97,7 +97,7 @@ const creatorOf = [
   </i18n-t>
 
   <h3 class="mt-10" md="text-left">
-    Find me on
+    {{ t('profile.contactHeader') }}
     <div class="flex flex-wrap gap-3 mt-5">
       <a
         v-for="link in linksFindMe"
@@ -116,7 +116,7 @@ const creatorOf = [
       </a>
     </div>
     <div class="mt-5">
-      Or mail me at
+      {{ t('profile.contactMailLabel') }}
       <a
         href="mailto:hi@ivanisekeev.com?subject=ivanisekeev.com: Your subject&body=Greeting. My name is ..."
         class="link"

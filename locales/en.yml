@@ -15,6 +15,9 @@ profile:
   motto: Hi, I am Ivan Isekeev. I'm a professional web developer.
   bio: As a developer, I'm driven by a passion for crafting digital solutions. I find great satisfaction in transforming concepts into tangible products that enhance people's daily lives. You can find my {projectLink}
   projectLinkText: full projects list here.
+  contactHeader: Find me on
+  contactMailLabel: Or mail me at
+  creatorListLabel: Creator of
 projects:
   title: Projects
   description: A list of my strongest projects
