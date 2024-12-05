@@ -19,7 +19,7 @@ const messages = Object.fromEntries(
 export const install: UserModule = ({ app }) => {
   const i18n = createI18n({
     legacy: false,
-    locale: navigator?.language || 'en',
+    locale: typeof window !== 'undefined' ? navigator?.language : 'en',
     messages,
   })
 
