@@ -19,6 +19,10 @@ export default defineConfig({
       'icon-btn',
       'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-purple-600',
     ],
+    [
+      'link',
+      'border-b-1 color-black hover:border-black transition duration-400 ease-in-out dark:color-white dark:hover:border-white dark:border-neutral-7',
+    ],
   ],
   presets: [
     presetWind(),
@@ -32,7 +36,10 @@ export default defineConfig({
       fonts: {
         sans: [{ name: 'Inter' }, { name: 'sans', provider: 'none' }],
         serif: [{ name: 'Inter' }, { name: 'sans', provider: 'none' }],
-        mono: [{ name: 'DM Mono' }, { name: 'sans', provider: 'none' }],
+        mono: [
+          { name: 'Roboto Condensed' },
+          { name: 'sans', provider: 'none' },
+        ],
         indieFlower: [
           { name: 'Indie Flower' },
           { name: 'sans', provider: 'none' },

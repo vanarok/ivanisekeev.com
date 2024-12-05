@@ -5,5 +5,4 @@
   >
     <RouterView />
   </main>
-  <TheFooter />
 </template>

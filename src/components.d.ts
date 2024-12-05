@@ -20,6 +20,8 @@ declare module 'vue' {
     TheFooter: typeof import('./components/TheFooter.vue')['default']
     TheProfile: typeof import('./components/TheProfile.vue')['default']
     TheProjects: typeof import('./components/TheProjects.vue')['default']
+    VBtn: typeof import('vuetify/components')['VBtn']
+    VBtnToggle: typeof import('vuetify/components')['VBtnToggle']
     VCard: typeof import('vuetify/components')['VCard']
     VCardText: typeof import('vuetify/components')['VCardText']
     VCardTitle: typeof import('vuetify/components')['VCardTitle']
@@ -27,5 +29,6 @@ declare module 'vue' {
     VDialog: typeof import('vuetify/components')['VDialog']
     VImg: typeof import('vuetify/components')['VImg']
     VProgressCircular: typeof import('vuetify/components')['VProgressCircular']
+    VSelect: typeof import('vuetify/components')['VSelect']
   }
 }

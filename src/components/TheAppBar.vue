@@ -1,12 +1,79 @@
 <script setup lang="ts">
-import NavigationList from './NavigationList.vue'
+import { RouterLink } from 'vue-router'
 import AppLogo from './AppLogo.vue'
+
+const { t, locale } = useI18n()
+
+function toggleLocales() {
+  locale.value = locale.value === 'ru' ? 'en' : 'ru'
+}
+
+const toggleDark = useToggleDark()
+
+const route = useRoute()
+const upworkReferer = route.query.referer === 'upwork'
+
+const links = [
+  {
+    localeKey: 'button.home',
+    to: '/',
+  },
+  {
+    localeKey: 'button.projects',
+    to: '/projects',
+  },
+  {
+    localeKey: 'button.blog',
+    to: 'https://blog.ivanisekeev.com',
+  },
+]
 </script>
 
 <template>
-  <header backdrop-blur :class="$style.appBar">
+  <header
+    backdrop-blur
+    :class="$style.appBar"
+    class="flex items-center gap-2 text-neutral-5"
+  >
     <AppLogo />
-    <NavigationList />
+
+    <nav class="ml-auto flex flex-row gap-2 md:gap-6">
+      <RouterLink
+        v-for="link in links"
+        :key="link.localeKey"
+        class="icon-btn flex items-center gap-2"
+        :to="link.to"
+      >
+        {{ t(link.localeKey) }}
+      </RouterLink>
+    </nav>
+
+    <button
+      class="icon-btn mx-2 text-lg"
+      :title="t('button.toggle_dark')"
+      @click="toggleDark()"
+    >
+      <div i="carbon-sun dark:carbon-moon" />
+    </button>
+
+    <button
+      class="icon-btn mx-2 text-lg"
+      :title="t('button.toggle_langs')"
+      @click="toggleLocales()"
+    >
+      <div i-carbon-ibm-watson-language-translator />
+    </button>
+
+    <a
+      v-if="!upworkReferer"
+      class="icon-btn mx-2 text-lg"
+      rel="noreferrer"
+      href="https://github.com/vanarok"
+      target="_blank"
+      title="GitHub"
+    >
+      <div i-carbon-logo-github />
+    </a>
   </header>
   <div class="h-4rem" />
 </template>
