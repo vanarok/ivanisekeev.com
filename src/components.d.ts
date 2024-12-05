@@ -8,20 +8,13 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AppLogo: typeof import('./components/AppLogo.vue')['default']
-    MyContacts: typeof import('./components/MyContacts.vue')['default']
-    NavigationList: typeof import('./components/NavigationList.vue')['default']
     PhotoPortrait: typeof import('./components/PhotoPortrait.vue')['default']
-    ProfileIntro: typeof import('./components/ProfileIntro.vue')['default']
     ProjectItem: typeof import('./components/ProjectItem.vue')['default']
     README: typeof import('./components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheAppBar: typeof import('./components/TheAppBar.vue')['default']
-    TheFooter: typeof import('./components/TheFooter.vue')['default']
-    TheProfile: typeof import('./components/TheProfile.vue')['default']
     TheProjects: typeof import('./components/TheProjects.vue')['default']
-    VBtn: typeof import('vuetify/components')['VBtn']
-    VBtnToggle: typeof import('vuetify/components')['VBtnToggle']
     VCard: typeof import('vuetify/components')['VCard']
     VCardText: typeof import('vuetify/components')['VCardText']
     VCardTitle: typeof import('vuetify/components')['VCardTitle']
@@ -29,6 +22,5 @@ declare module 'vue' {
     VDialog: typeof import('vuetify/components')['VDialog']
     VImg: typeof import('vuetify/components')['VImg']
     VProgressCircular: typeof import('vuetify/components')['VProgressCircular']
-    VSelect: typeof import('vuetify/components')['VSelect']
   }
 }
