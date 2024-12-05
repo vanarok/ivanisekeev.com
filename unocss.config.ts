@@ -30,15 +30,9 @@ export default defineConfig({
     presetTypography(),
     presetWebFonts({
       fonts: {
-        sans: [{ name: 'DM Sans' }, { name: 'sans', provider: 'none' }],
-
-        serif: [
-          { name: 'DM Serif Display' },
-          { name: 'sans', provider: 'none' },
-        ],
-
+        sans: [{ name: 'Inter' }, { name: 'sans', provider: 'none' }],
+        serif: [{ name: 'Inter' }, { name: 'sans', provider: 'none' }],
         mono: [{ name: 'DM Mono' }, { name: 'sans', provider: 'none' }],
-
         indieFlower: [
           { name: 'Indie Flower' },
           { name: 'sans', provider: 'none' },
