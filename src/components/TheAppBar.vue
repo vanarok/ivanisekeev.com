@@ -16,12 +16,12 @@ const upworkReferer = route.query.referer === 'upwork'
 const links = [
   {
     localeKey: 'button.projects',
-    icon: 'carbon-idea',
+    icon: 'i-carbon-idea',
     to: '/projects',
   },
   {
     localeKey: 'button.blog',
-    icon: 'carbon-blog',
+    icon: 'i-carbon-blog',
     to: 'https://blog.ivanisekeev.com',
   },
 ]
@@ -44,7 +44,7 @@ const links = [
         :to="link.to"
         :href="link.to"
       >
-        <span class="inline md:hidden" :i="link.icon" />
+        <span class="inline md:hidden" :class="link.icon" />
         <span class="hidden md:inline">{{ t(link.localeKey) }}</span>
       </component>
     </nav>
