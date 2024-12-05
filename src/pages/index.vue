@@ -96,7 +96,7 @@ const creatorOf = [
     </template>
   </i18n-t>
 
-  <h3 class="mt-10" md="text-left">
+  <h3 class="mt-10 text-left">
     {{ t('profile.contactHeader') }}
     <div class="flex flex-wrap gap-3 mt-5">
       <a
