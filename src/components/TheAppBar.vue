@@ -16,10 +16,12 @@ const upworkReferer = route.query.referer === 'upwork'
 const links = [
   {
     localeKey: 'button.projects',
+    icon: 'carbon-idea',
     to: '/projects',
   },
   {
     localeKey: 'button.blog',
+    icon: 'carbon-blog',
     to: 'https://blog.ivanisekeev.com',
   },
 ]
@@ -29,25 +31,26 @@ const links = [
   <header
     backdrop-blur
     :class="$style.appBar"
-    class="flex items-center gap-2 text-neutral-5 dark:text-neutral-4"
+    class="flex items-center gap-4 md:gap-6 text-neutral-5 dark:text-neutral-4"
   >
     <AppLogo />
 
-    <nav class="ml-auto flex flex-row gap-2 md:gap-6">
+    <nav class="ml-auto flex flex-row gap-4 md:gap-6">
       <component
         :is="link.to.startsWith('/') ? RouterLink : 'a'"
         v-for="link in links"
         :key="link.localeKey"
-        class="icon-btn flex items-center gap-2"
+        class="icon-btn flex items-center"
         :to="link.to"
         :href="link.to"
       >
-        {{ t(link.localeKey) }}
+        <span class="inline md:hidden" :i="link.icon" />
+        <span class="hidden md:inline">{{ t(link.localeKey) }}</span>
       </component>
     </nav>
 
     <button
-      class="icon-btn mx-2 text-lg"
+      class="icon-btn text-lg"
       :title="t('button.toggle_dark')"
       @click="toggleDark()"
     >
@@ -55,7 +58,7 @@ const links = [
     </button>
 
     <button
-      class="icon-btn mx-2 text-lg"
+      class="icon-btn text-lg"
       :title="t('button.toggle_langs')"
       @click="toggleLocales()"
     >
@@ -64,7 +67,7 @@ const links = [
 
     <a
       v-if="!upworkReferer"
-      class="icon-btn mx-2 text-lg"
+      class="icon-btn text-lg"
       rel="noreferrer"
       href="https://github.com/vanarok"
       target="_blank"
