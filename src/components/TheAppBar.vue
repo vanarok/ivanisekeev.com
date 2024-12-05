@@ -33,7 +33,7 @@ const links = [
   <header
     backdrop-blur
     :class="$style.appBar"
-    class="flex items-center gap-2 text-neutral-5"
+    class="flex items-center gap-2 text-neutral-5 dark:text-neutral-4"
   >
     <AppLogo />
 

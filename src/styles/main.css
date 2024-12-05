@@ -9,7 +9,7 @@ body,
 }
 
 html.dark {
-  background: #121212;
+  background: #000;
   color-scheme: dark;
 }
 
@@ -35,7 +35,7 @@ body {
 }
  /* Dark mode */
 html.dark body {
-  background: radial-gradient(circle, #1d1d1d 10%, transparent 20%) 10px 10px;
+  background: radial-gradient(circle, #0e0e0e 10%, transparent 20%) 10px 10px;
   background-size: 20px 20px;
   animation: moveDots 5s infinite alternate;
 }
