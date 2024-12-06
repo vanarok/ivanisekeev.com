@@ -91,6 +91,7 @@ const links = [
   left: 0;
   width: 100%;
   z-index: 100;
+  mask: linear-gradient(to top, transparent, black 5%);
 }
 
 @media (min-width: 1024px) {
