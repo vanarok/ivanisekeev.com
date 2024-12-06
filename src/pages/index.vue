@@ -10,18 +10,18 @@ const linksFindMe = [
     width: 18,
   },
   {
-    height: 23,
-    iconImagePath: '/upwork.svg',
-    link: 'https://www.upwork.com/freelancers/~01d481153ecadb517e',
-    name: 'Upwork',
-    width: 23,
-  },
-  {
     height: 18,
     iconImagePath: '/github.svg',
     link: 'https://github.com/vanarok',
     name: 'GitHub',
     width: 18,
+  },
+  {
+    height: 23,
+    iconImagePath: '/upwork.svg',
+    link: 'https://www.upwork.com/freelancers/~01d481153ecadb517e',
+    name: 'Upwork',
+    width: 23,
   },
   {
     height: 16,
@@ -90,9 +90,9 @@ const creatorOf = [
     style="line-height: 2"
   >
     <template #projectLink>
-      <a href="/projects" class="link">
+      <RouterLink to="/projects" class="link">
         {{ t('profile.projectLinkText') }}
-      </a>
+      </RouterLink>
     </template>
   </i18n-t>
 

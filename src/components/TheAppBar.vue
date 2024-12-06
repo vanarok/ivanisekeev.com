@@ -49,6 +49,17 @@ const links = [
       </component>
     </nav>
 
+    <a
+      v-if="!upworkReferer"
+      class="icon-btn text-lg"
+      rel="noreferrer"
+      href="https://github.com/vanarok"
+      target="_blank"
+      title="GitHub"
+    >
+      <div i-carbon-logo-github />
+    </a>
+
     <button
       class="icon-btn text-lg"
       :title="t('button.toggle_dark')"
@@ -64,17 +75,6 @@ const links = [
     >
       <div i-carbon-ibm-watson-language-translator />
     </button>
-
-    <a
-      v-if="!upworkReferer"
-      class="icon-btn text-lg"
-      rel="noreferrer"
-      href="https://github.com/vanarok"
-      target="_blank"
-      title="GitHub"
-    >
-      <div i-carbon-logo-github />
-    </a>
   </header>
   <div class="h-4rem" />
 </template>
