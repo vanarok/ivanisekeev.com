@@ -58,3 +58,26 @@ html.dark body {
     background-position: 0 0, 10px 10px;
   }
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Dark mode */
+html.dark ::-webkit-scrollbar-thumb {
+  background: #3b3b3b;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #0e0e0e;
+}
