@@ -17,6 +17,13 @@ const linksFindMe = [
     width: 18,
   },
   {
+    height: 18,
+    iconImagePath: '/telegram.svg',
+    link: 'https://t.me/vanarok',
+    name: 'Telegram',
+    width: 18,
+  },
+  {
     height: 23,
     iconImagePath: '/upwork.svg',
     link: 'https://www.upwork.com/freelancers/~01d481153ecadb517e',
@@ -26,9 +33,23 @@ const linksFindMe = [
   {
     height: 16,
     iconImagePath: '/kwork.ico',
-    link: 'https://kwork.ru/user/vanarok',
+    link: 'https://kwork.com/user/vanarok',
     name: 'Kwork',
     width: 15,
+  },
+  {
+    height: 16,
+    iconImagePath: '/kwork.ico',
+    link: 'https://kwork.ru/user/vanarok',
+    name: 'Кворк',
+    width: 15,
+  },
+  {
+    height: 17,
+    iconImagePath: '/fiverr.svg',
+    link: 'https://www.fiverr.com/vanarok',
+    name: 'Fiverr',
+    width: 17,
   },
 ]
 
