@@ -20,7 +20,7 @@ profile:
   creatorListLabel: Creator of
 projects:
   title: Projects
-  description: A list of my strongest projects
+  description: Projects that I created or working on
   gifki:
     title: A platform for publishing gifs, clips, stickers
     description1: As a frontend developer working on the platform, I faced several challenges that required me to think creatively and use my problem-solving skills. One of the main challenges I faced was ensuring that the platform was optimized for a variety of devices and screen sizes. This required me to be proficient in responsive design techniques and have a strong understanding of how to use CSS media queries and grid layouts effectively.
