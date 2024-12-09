@@ -1,0 +1,6 @@
+<template>
+  <TheAppBar />
+  <main class="px-2rem py-16 text-center text-gray-600 dark:text-gray-200">
+    <RouterView />
+  </main>
+</template>

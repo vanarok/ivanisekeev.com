@@ -4,7 +4,7 @@ button:
   home: Home
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
-  projects: Projects
+  projects: Portfolio
   blog: Blog
 profile:
   specialization: full-stack
@@ -19,7 +19,7 @@ profile:
   contactMailLabel: Or mail me at
   creatorListLabel: Creator of
 projects:
-  title: Projects
+  title: Portfolio
   description: Projects that I created or working on
   gifki:
     title: A platform for publishing gifs, clips, stickers

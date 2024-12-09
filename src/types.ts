@@ -1,4 +1,4 @@
-import { type ViteSSGContext } from 'vite-ssg'
+import type { ViteSSGContext } from 'vite-ssg'
 
 export type UserModule = (ctx: ViteSSGContext) => void
 
@@ -13,4 +13,5 @@ export interface Project {
   skills: string[]
   pictures: Picture[]
   description: string[]
+  previewPicture: string
 }
