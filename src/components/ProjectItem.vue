@@ -3,7 +3,7 @@ import { Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import type { Picture } from '~/types'
 
-defineProps<{
+const props = defineProps<{
   title: string
   description: string[]
   pictures: Picture[]
@@ -15,14 +15,19 @@ const showAboutProject = ref(false)
 
 const breakpoint = useBreakpoint()
 const smallerMd = breakpoint.smaller('md')
+
+function showProject() {
+  if (props.description.length === 0) return
+  showAboutProject.value = true
+}
 </script>
 
 <template>
   <div
-    class="flex flex-col md:flex-row gap-3 py-5 px-8 rounded-lg cursor-pointer"
-    @click="showAboutProject = true"
+    class="flex flex-col md:flex-row gap-3 py-25 px-10 rounded-lg cursor-pointer logo-container hover:scale-115 transition duration-300 ease-in-out grayscale-100 hover:grayscale-0 hover:bg-purple-1 dark:invert-100 dark:hover:invert-0 brightness-85 hover:brightness-100"
+    @click="showProject"
   >
-    <v-img :aspect-ratio="20 / 9" class="rounded-lg" :src="previewPicture">
+    <v-img :aspect-ratio="20 / 9" class="drop-shadow-xl" :src="previewPicture">
       <template #placeholder>
         <div class="flex justify-center items-center h-full">
           <v-progress-circular indeterminate />
