@@ -24,7 +24,7 @@ function showProject() {
 
 <template>
   <div
-    class="flex flex-col md:flex-row gap-3 py-25 px-10 rounded-lg cursor-pointer logo-container hover:scale-115 transition duration-300 ease-in-out grayscale-100 hover:grayscale-0 hover:bg-purple-1 dark:invert-100 dark:hover:invert-0 brightness-85 hover:brightness-100"
+    class="flex flex-col md:flex-row gap-3 py-25 px-6 rounded-lg cursor-pointer logo-container hover:scale-115 transition duration-300 ease-in-out grayscale-100 hover:grayscale-0 hover:bg-purple-1 dark:invert-100 dark:hover:invert-0 brightness-85 hover:brightness-100"
     @click="showProject"
   >
     <v-img :aspect-ratio="20 / 9" class="drop-shadow-xl" :src="previewPicture">

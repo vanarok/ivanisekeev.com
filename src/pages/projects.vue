@@ -27,7 +27,7 @@ const projects = useProjects()
     GitHub
   </v-btn>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-3 gap-10 mt-10">
+  <div class="grid grid-cols-1 md:grid-cols-3 grid-rows-3 gap-10 mt-20">
     <ProjectItem
       v-for="project in projects"
       :key="project.name"
