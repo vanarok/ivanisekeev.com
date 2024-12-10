@@ -235,6 +235,20 @@ export function useProjects() {
         ],
         description: [t('projects.crm-sf.description1')],
       },
+      {
+        name: 'footyroom',
+        skills: [],
+        previewPicture: '/footyroom-preview.png',
+        pictures: [],
+        description: [],
+      },
+      {
+        name: 'startgame',
+        skills: [],
+        previewPicture: '/startgame-preview.svg',
+        pictures: [],
+        description: [],
+      },
     ]
   })
 
