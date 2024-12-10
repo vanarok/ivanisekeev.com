@@ -28,13 +28,14 @@ html.dark {
   height: 2px;
 }
 
-body {
+#app {
   background: radial-gradient(circle, #f8f8f8 10%, transparent 20%) 10px 10px;
   background-size: 20px 20px;
   animation: moveDots 5s infinite alternate;
 }
- /* Dark mode */
-html.dark body {
+
+/* Dark mode */
+html.dark #app {
   background: radial-gradient(circle, #0e0e0e 10%, transparent 20%) 10px 10px;
   background-size: 20px 20px;
   animation: moveDots 5s infinite alternate;
