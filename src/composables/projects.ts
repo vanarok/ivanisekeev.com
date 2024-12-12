@@ -19,7 +19,8 @@ export function useProjects() {
           'Linux',
           'Git',
         ],
-        previewPicture: '/gifki-preview.svg',
+        previewPicture: '/gifki/gifki-main-unlogged.png',
+        logo: '/gifki-preview.svg',
         pictures: [
           {
             id: 1,
@@ -128,7 +129,8 @@ export function useProjects() {
           'PostCSS',
           'Git',
         ],
-        previewPicture: '/screenpixel-preview.png',
+        previewPicture: '/screenpixel/screenpixel-plans.png',
+        logo: '/screenpixel-preview.png',
         pictures: [
           {
             id: 1,
@@ -192,7 +194,8 @@ export function useProjects() {
           'NGINX',
           'Linux',
         ],
-        previewPicture: '/xwave-preview.png',
+        previewPicture: '/xwave/xwave-service.png',
+        logo: '/xwave-preview.png',
         pictures: [
           {
             id: 1,
@@ -215,7 +218,8 @@ export function useProjects() {
       {
         name: 'crm-sf',
         skills: ['TypeScript', 'Vue.JS', 'Vuetify', 'vue-I18n', 'Git'],
-        previewPicture: '/crmsf-preview.svg',
+        previewPicture: '/crm-sf/crm-sf-clients.png',
+        logo: '/crmsf-preview.svg',
         pictures: [
           {
             id: 1,
@@ -239,6 +243,7 @@ export function useProjects() {
         name: 'footyroom',
         skills: [],
         previewPicture: '/footyroom-preview.png',
+        logo: '/footyroom-preview.png',
         pictures: [],
         description: [],
       },
@@ -246,6 +251,7 @@ export function useProjects() {
         name: 'startgame',
         skills: [],
         previewPicture: '/startgame-preview.svg',
+        logo: '/startgame-preview.svg',
         pictures: [],
         description: [],
       },

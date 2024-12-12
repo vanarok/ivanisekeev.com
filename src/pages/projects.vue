@@ -40,34 +40,41 @@ const swiper = ref(null)
     :autoplay="true"
   >
     <template v-for="project in projects" :key="project.name">
-      <SwiperSlide v-if="project.pictures.length > 0" class="cursor-grab my-20">
-        <v-img
-          :src="project.pictures[0].picture"
-          class="rounded-lg drop-shadow-2xl dark:drop-shadow-none"
-        >
-          <template #placeholder>
-            <div class="flex justify-center items-center h-full">
-              <v-progress-circular indeterminate />
-            </div>
-          </template>
-        </v-img>
+      <SwiperSlide
+        v-if="project.pictures.length > 0"
+        class="cursor-pointer my-20"
+      >
+        <ProjectItem
+          :title="t(`projects.${project.name}.title`)"
+          :preview-picture="project.previewPicture"
+          :pictures="project.pictures"
+          :skills="project.skills"
+          :description="project.description"
+        />
+
+        <div class="mt-4 font-bold color-black dark:color-white">
+          {{ t(`projects.${project.name}.title`) }}
+        </div>
       </SwiperSlide>
     </template>
   </Swiper>
 
   <div
-    class="grid grid-cols-1 md:grid-cols-3 grid-rows-3 gap-10 md:max-w-75vw md:mx-auto"
+    class="grid grid-cols-1 md:grid-cols-3 grid-rows-3 gap-10 md:max-w-75vw md:mx-auto mt-10"
   >
-    <!--     TODO: refactor to remove overhead of component -->
-    <ProjectItem
+    <div
       v-for="project in projects"
       :key="project.name"
-      :pictures="project.pictures"
-      :title="t(`projects.${project.name}.title`)"
-      :skills="project.skills"
-      :description="project.description"
-      :preview-picture="project.previewPicture"
-    />
+      class="flex flex-col md:gap-3 p-4 rounded-lg md:hover:scale-115 transition duration-300 ease-in-out grayscale-100 md:hover:grayscale-0 md:hover:bg-purple-1 dark:invert-100 dark:md:hover:invert-0 brightness-85 md:hover:brightness-100 m-4 md:m-none"
+    >
+      <v-img :key="project.name" :src="project.logo" class="drop-shadow">
+        <template #placeholder>
+          <div class="flex justify-center items-center h-full">
+            <v-progress-circular indeterminate />
+          </div>
+        </template>
+      </v-img>
+    </div>
   </div>
 </template>
 

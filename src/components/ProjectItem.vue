@@ -24,36 +24,16 @@ function showProject() {
 
 <template>
   <div
-    class="flex flex-col md:flex-row gap-3 p-8 rounded-lg cursor-pointer logo-container hover:scale-115 transition duration-300 ease-in-out grayscale-100 hover:grayscale-0 hover:bg-purple-1 dark:invert-100 dark:hover:invert-0 brightness-85 hover:brightness-100"
+    class="drop-shadow-xl dark:drop-shadow-none hover:scale-102 transition duration-300 ease-in-out"
     @click="showProject"
   >
-    <v-img :aspect-ratio="1 / 1" class="drop-shadow-xl" :src="previewPicture">
+    <v-img min-height="200" :src="previewPicture" rounded>
       <template #placeholder>
         <div class="flex justify-center items-center h-full">
           <v-progress-circular indeterminate />
         </div>
       </template>
     </v-img>
-    <!--    <div md:w-80> -->
-    <!--      <h4 -->
-    <!--        font-bold -->
-    <!--        style="white-space: normal" -->
-    <!--        text-sm -->
-    <!--        md:text-lg -->
-    <!--        text-left -->
-    <!--        v-text="title" -->
-    <!--      /> -->
-    <!--      <p -->
-    <!--        text-left -->
-    <!--        text-xs -->
-    <!--        md:text-base -->
-    <!--        style="white-space: normal" -->
-    <!--        truncate -->
-    <!--        line-clamp-3 -->
-    <!--        md="line-clamp-5" -->
-    <!--        v-text="description[0]" -->
-    <!--      /> -->
-    <!--    </div> -->
   </div>
 
   <v-dialog

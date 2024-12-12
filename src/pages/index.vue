@@ -132,7 +132,13 @@ const creatorOf = [
           :height="link.height"
           :width="link.width"
           class="mr-1 align-text-bottom flex-inline grayscale dark:invert-100"
-        />
+        >
+          <template #placeholder>
+            <div class="flex justify-center items-center h-full">
+              <v-progress-circular indeterminate />
+            </div>
+          </template>
+        </v-img>
         {{ link.name }}
       </a>
     </div>
@@ -147,8 +153,3 @@ const creatorOf = [
     </div>
   </h3>
 </template>
-
-<route lang="yaml">
-meta:
-layout: home
-</route>

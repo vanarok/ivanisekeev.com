@@ -13,5 +13,6 @@ export interface Project {
   skills: string[]
   pictures: Picture[]
   description: string[]
+  logo: string
   previewPicture: string
 }
