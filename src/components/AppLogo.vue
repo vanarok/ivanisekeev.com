@@ -15,25 +15,15 @@ function getLogoText() {
       return 'Ivan Isekeev'
   }
 }
+
+const router = useRouter()
 </script>
 
 <template>
   <h1
-    icon-btn
-    font-weight-1000
-    text-lg
-    md:text-3xl
-    cursor-pointer
-    :class="$style.logo"
-    @click="$router.push('/')"
+    class="icon-btn font-weight-1000 text-2xl md:text-3xl cursor-pointer font-indieFlower transition duration-400 ease-in-out"
+    @click="router.push('/')"
   >
     {{ getLogoText() }}
   </h1>
 </template>
-
-<style lang="postcss" module>
-.logo {
-  font-family: 'Indie Flower';
-  transition: 0.4s;
-}
-</style>
