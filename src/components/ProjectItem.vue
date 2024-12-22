@@ -36,7 +36,7 @@ function showProject() {
       width="90rem"
       position="top"
       :src="previewPicture"
-      class="rounded-xl border-1 border-rounded-xl"
+      class="rounded-xl border-1 border-rounded-xl dark:border-neutral-7"
       cover
     >
       <template #placeholder>

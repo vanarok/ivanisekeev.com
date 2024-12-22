@@ -300,7 +300,7 @@ const projects = computed(() => {
     <h3
       class="mt-50 color-black dark:color-white text-3xl md:text-4xl font-bold mb-20 xl:text-left text-center"
     >
-      С кем я сотрудничал
+      {{ t('projects.title2') }}
     </h3>
     <div
       class="grid grid-cols-1 md:grid-cols-3 grid-rows-3 gap-10 lg:max-w-75vw lg:mx-auto mt-10 max-w-75vw m-auto"

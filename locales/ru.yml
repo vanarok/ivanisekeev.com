@@ -21,6 +21,7 @@ profile:
   creatorListLabel: Создал
 projects:
   title: Моя работа
+  title2: С кем я сотрудничал
   description: создано мною или над чем я работал
   gifki:
     title: Платформа для публикации гифок, клипов, стикеров

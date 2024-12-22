@@ -20,6 +20,7 @@ profile:
   creatorListLabel: Creator of
 projects:
   title: My work
+  title2: Companies with which I worked
   description: that I created or am working on
   gifki:
     title: GIFS
