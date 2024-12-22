@@ -31,7 +31,7 @@ const links = [
   <header
     backdrop-blur
     :class="$style.appBar"
-    class="flex items-center gap-4 md:gap-6 text-neutral-5 dark:text-neutral-4"
+    class="px-4 md:px-6 flex items-center gap-4 md:gap-6 text-neutral-5 dark:text-neutral-4"
   >
     <AppLogo />
 
@@ -81,7 +81,6 @@ const links = [
 
 <style lang="postcss" module>
 .appBar {
-  padding: 0 2rem;
   line-height: 1.5;
   height: 4rem;
   display: flex;
