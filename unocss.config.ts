@@ -35,7 +35,7 @@ export default defineConfig({
     presetWebFonts({
       fonts: {
         sans: [{ name: 'Inter' }, { name: 'sans', provider: 'none' }],
-        serif: [{ name: 'Inter' }, { name: 'sans', provider: 'none' }],
+        serif: [{ name: 'Inter' }, { name: 'serif', provider: 'none' }],
         mono: [
           { name: 'Roboto Condensed' },
           { name: 'sans', provider: 'none' },

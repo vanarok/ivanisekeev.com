@@ -22,14 +22,14 @@ projects:
   title: My work
   description: that I created or am working on
   gifki:
-    title: A platform for publishing gifs, clips, stickers
+    title: GIFS
     description1: As a frontend developer working on the platform, I faced several challenges that required me to think creatively and use my problem-solving skills. One of the main challenges I faced was ensuring that the platform was optimized for a variety of devices and screen sizes. This required me to be proficient in responsive design techniques and have a strong understanding of how to use CSS media queries and grid layouts effectively.
     description2: To solve this problem, I spent a lot of time researching best practices for responsive design and experimenting with different layout approaches. I also worked closely with the design team to ensure that the final product was visually appealing and easy to use on all devices.
     description3: Another challenge I faced was implementing real-time features such as live gif, clip, and sticker searches. This required me to have a solid understanding of JavaScript and be able to work with APIs and websockets.
     description4: To solve this problem, I spent time learning about the different tools and techniques available for implementing real-time features and experimented with different approaches. I also worked closely with the backend team to ensure that the data being delivered to the frontend was accurate and up-to-date.
     description5: Overall, working on the project helped me to improve my skills in responsive design, JavaScript, and working with APIs and websockets. It was a challenging but rewarding experience that allowed me to grow as a developer and create a product that is used and enjoyed by a large community of users.
   xwave:
-    title: Boat booking application
+    title: Xwave
     description1: The goal of this web application development project was to create a user-friendly platform for automating service appointments for my client's business using Vue.js, Koa, and PrimeFaces UI. The platform allows clients to easily make appointments online, streamlining the scheduling process for both clients and the business. The application was implemented with various features and functionality using Vue.js, Koa, and PrimeFaces UI, and integrated with the Yclients API to access schedule records and facilitate the booking process. My role required strong skills in web development and a solid understanding of designing and building web applications that provide value to users. Through my contributions, the end result was a web application that effectively solves the problem of automating service appointments and showcases my abilities as a web developer.
   personal-site:
     title: Ivan Isekeev's personal website is built with Vue.js
@@ -37,10 +37,10 @@ projects:
     description2: I was responsible for the design and functionality of the site, as well as integration with social networks SEO optimization.
     description3: The website has become an important tool to promote the brand and increase the number of orders.
   crm-sf:
-    title: Customer relationship management
+    title: CRM Success Finance
     description1: My project was the implementation of a typical Customer Relationship Management (CRM) system. My tasks included the implementation of multiple new pages for it to improve functionality and ease of use. I faced a problem that the code was well-documented, but it was difficult for me to understand how the class models worked. However, I had a lucky coincidence - I had a mentor for the project who transferred a lot of experience and I was able to master all the complexities and successfully complete the project.
   screenpixel:
-    title: Personal user account
+    title: Screenpixel
     description1: My work consisted of redesigning a design layout into a component system using vue.js. My task was to create components that could be used multiple times in the application, in order to reduce the amount of code and simplify the application support.
     description2: One of the problems I encountered during development was that the styles within the components did not use isolation and spread throughout the entire application. This led to changes in font, for example, in some places during page transitions. I had to make a number of modifications to the code to isolate the component styles and avoid such problems.
     description3: In addition to isolating styles, I also added transition animations for modals and transitions between pages. This made the interface more smooth and user-friendly, as well as adding an additional design element and increasing the overall quality of the application. As a result, the project became more attractive and user-friendly for end-users.

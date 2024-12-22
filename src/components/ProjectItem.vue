@@ -3,6 +3,11 @@ import { Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import type { Picture } from '~/types'
 
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
+
 const props = defineProps<{
   title: string
   description: string[]
@@ -24,16 +29,29 @@ function showProject() {
 
 <template>
   <div
-    class="drop-shadow-xl dark:drop-shadow-none hover:scale-102 transition duration-300 ease-in-out"
+    class="drop-shadow-2xl dark:drop-shadow-none hover:scale-102 transition duration-500 ease-in-out cursor-pointer place-items-center"
     @click="showProject"
   >
-    <v-img min-height="200" :src="previewPicture" rounded>
+    <v-img
+      width="90rem"
+      position="top"
+      :src="previewPicture"
+      class="rounded-xl border-1 border-rounded-xl"
+      cover
+    >
       <template #placeholder>
         <div class="flex justify-center items-center h-full">
           <v-progress-circular indeterminate />
         </div>
       </template>
     </v-img>
+
+    <div
+      class="mt-4 text-2xl md:text-4xl font-black font-weight-black color-black dark:color-white m-w-full flex flex-row"
+    >
+      {{ title }}
+      <span class="i-carbon:cursor-1 inline"/>
+    </div>
   </div>
 
   <v-dialog
@@ -63,7 +81,6 @@ function showProject() {
           :pagination="{ clickable: true }"
           :modules="[Navigation, Pagination]"
           navigation
-          :slides-per-view="1"
           :space-between="50"
           :preload-images="false"
           class="mb-2"
