@@ -33,10 +33,9 @@ function showProject() {
     @click="showProject"
   >
     <v-img
-      width="90rem"
       position="top"
       :src="previewPicture"
-      class="rounded-xl border-1 border-rounded-xl dark:border-neutral-7"
+      class="w-full md:w-90rem md:h-40rem rounded-xl border-1 border-rounded-xl dark:border-neutral-7"
       cover
     >
       <template #placeholder>
@@ -50,7 +49,7 @@ function showProject() {
       class="mt-4 text-2xl md:text-4xl font-black font-weight-black color-black dark:color-white m-w-full flex flex-row"
     >
       {{ title }}
-      <span class="i-carbon:cursor-1 inline"/>
+      <span class="i-carbon:cursor-1 inline" />
     </div>
   </div>
 

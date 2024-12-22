@@ -283,7 +283,12 @@ const projects = computed(() => {
     GitHub
   </v-btn>
 
-  <div class="flex flex-col gap-100 mt-40 mb-100 mx-4">
+  <p class="mt-40 text-2xl color-neutral-2 dark:color-white flex justify-center gap-3 animate-bounce">
+    Scroll down <span class=" i-carbon:arrow-down text-3xl" />
+
+  </p>
+
+  <div class="flex flex-col gap-100 mt-40 md:mt-50 mb-100 mx-4">
     <template v-for="project in projects" :key="project.name">
       <ProjectItem
         v-if="project.pictures.length > 0"
