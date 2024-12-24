@@ -19,11 +19,6 @@ const links = [
     icon: 'i-carbon-idea',
     to: '/projects',
   },
-  {
-    localeKey: 'button.blog',
-    icon: 'i-carbon-blog',
-    to: 'https://blog.ivanisekeev.com',
-  },
 ]
 </script>
 
